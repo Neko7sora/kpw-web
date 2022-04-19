@@ -1,0 +1,5 @@
+<footer class="footer text-muted">
+  <div class="container">{{ $data := getJSON "package.json" }}
+    <p class="m-0 text-center">{{ .Site.Params.footer | safeHTML }}</p><p class="m-0 text-center meta">Open-source {{ $data.license }} Licensed. <a href="{{ $data.repository }}">GitHub v{{ $data.version }}</a></p>
+  </div>
+</footer>

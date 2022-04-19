@@ -1,0 +1,58 @@
+# Meta Data for SEO
+
+## Homepage
+title = "KamePowerWorld"
+titleSeparator = "-"
+titleAddition = "かめぱわぁ～るど"
+description = "かめぱわぁ～るどのウェブサイトへようこそ～！"
+
+## Open Graph
+images = ["kame.png"]
+ogLocale = "ja_JP"
+titleHome = "かめぱわ～"
+
+## Twitter Cards
+## https://developer.twitter.com/ja/docs/tweets/optimize-with-cards/guides/getting-started
+twitterSite = ""
+twitterCreator = ""
+
+## JSON-LD
+# schemaType = "Person"
+schemaType = "Organization"
+schemaName = "KamePowerWorld"
+schemaAuthor = "KamePowerWorld-Contributor"
+schemaAuthorTwitter = ""
+schemaAuthorGitHub = "https://github.com/KamePowerWorld"
+schemaLocale = "ja-JP"
+schemaLogo = "https://cdn.discordapp.com/attachments/931590427302330399/965171656869941318/kamepawa2.gif"
+schemaLogoResize = "512x png q100"
+schemaImage = "https://cdn.discordapp.com/attachments/934470551194447932/965904643525861456/Kamepowerworld.png"
+schemaImageResize = "1280x png q100"
+schemaTwitter = ""
+schemaGitHub = "https://github.com/KamePowerWorld/www.kamesuta.com"
+
+## Chrome Browser
+themeColor = "#144314"
+
+# Images
+quality = 100
+bgColor = "#fff"
+landscapePhotoWidths = [900, 800, 700, 600, 500]
+portraitPhotoWidths = [800, 700, 600, 500]
+lqipWidth = "20x"
+smallLimit = "320"
+
+### Image template
+defaultImage = "default-image.png" # put in `./assets/images/`
+fillImage = "1280x720 Center" # normalize image size
+
+# Footer
+footer = "Copyright (c) 2022 KamePowerWorld"
+
+# Feed
+copyRight = "Copyright (c) 2022 KamePowerWorld"
+
+# Alert
+alert = false
+alertDismissable = true
+alertText = "かめぱわぁ～るどのウェブサイトへようこそ～！"

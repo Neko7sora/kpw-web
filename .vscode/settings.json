@@ -8,7 +8,8 @@
     "**/CVS": true,
     "**/Thumbs.db": true,
     "**/CODEOWNERS": true,
-    "LICENSE.*": false
+    "LICENSE.*": false,
+    "node_modules": true
   },
   "files.exclude": {
     "**/.DS_Store": true,
@@ -18,7 +19,8 @@
     "**/CVS": true,
     "**/Thumbs.db": true,
     "**/CODEOWNERS": true,
-    "LICENSE.*": false
+    "LICENSE.*": false,
+    "node_modules": true,
   },
   "files.autoGuessEncoding": true,
   "editor.renderControlCharacters": true,

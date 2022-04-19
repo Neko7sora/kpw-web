@@ -13,6 +13,9 @@ Thumbs.db
 
 node_modules
 .env
+public
+resources
+.hugo_build.lock
 
 .yarn
 install-state.gz
