@@ -2,9 +2,9 @@ name: Hyas CI
 
 on:
   push:
-    branches: gh-pages
+    branches: [gh-pages]
   pull_request:
-    branches: gh-pages
+    branches: [gh-pages]
 
 jobs:
   build:
@@ -16,19 +16,19 @@ jobs:
         node: [16.x]
 
     steps:
-    - name: Check out Hyas project
-      uses: actions/checkout@v3
+      - name: Check out Hyas project
+        uses: actions/checkout@v3
 
-    - name: Set up Node.js ${{ matrix.node }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node }}
+      - name: Set up Node.js ${{ matrix.node }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node }}
 
-    - name: Install dependencies
-      run: npm ci
+      - name: Install dependencies
+        run: npm ci
 
-    - name: Run Hyas test script
-      run: npm test
+      - name: Run Hyas test script
+        run: npm test
 
-    - name: Build production website
-      run: npm run build
+      - name: Build production website
+        run: npm run build

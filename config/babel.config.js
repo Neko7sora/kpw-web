@@ -9,6 +9,7 @@ module.exports = {
             '>=1%',
             'not ie 11',
             'not op_mini all',
+            'not dead',
           ],
         },
       },

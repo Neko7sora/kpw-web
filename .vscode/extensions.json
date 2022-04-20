@@ -1,5 +1,8 @@
 {
   "recommendations": [
-    "editorconfig.editorconfig"
+    "editorconfig.editorconfig",
+    "stylelint.vscode-stylelint",
+    "dbaeumer.vscode-eslint",
+    "DavidAnson.vscode-markdownlint"
   ]
 }

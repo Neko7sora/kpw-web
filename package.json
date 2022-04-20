@@ -3,7 +3,11 @@
   "description": "KamePowerWorld Website",
   "version": "1.0.0",
   "browserslist": [
-    "defaults"
+    "defaults",
+    "not IE 11",
+    "not op_mini all",
+    "maintained node versions",
+    "not dead"
   ],
   "repository": "https://github.com/KamePowerWorld/www.kamesuta.com",
   "license": "MIT",
@@ -22,7 +26,7 @@
     "clean:install": "shx rm -rf package-lock.json node_modules ",
     "lint": "npm run -s lint:scripts && npm run -s lint:styles && npm run -s lint:markdown",
     "lint:scripts": "eslint assets/js config",
-    "lint:styles": "stylelint \"assets/scss/**/*.{css,sass,scss,sss,less}\" --fix",
+    "lint:styles": "stylelint --fix \"assets/scss/**/*.{css,sass,scss,sss,less}\"",
     "lint:markdown": "markdownlint-cli2 \"*.md\" \"content/**/*.md\"",
     "lint:markdown-fix": "markdownlint-cli2-fix \"*.md\" \"content/**/*.md\"",
     "server": "exec-bin node_modules/.bin/hugo/hugo server",
@@ -55,7 +59,8 @@
     "purgecss-whitelister": "2.4.0",
     "quicklink": "2.2.0",
     "shx": "0.3.4",
-    "stylelint": "14.7.1",
+    "stylelint": "^14.7.1",
+    "stylelint-config-recess-order": "^3.0.0",
     "stylelint-config-standard-scss": "3.0.0"
   },
   "otherDependencies": {

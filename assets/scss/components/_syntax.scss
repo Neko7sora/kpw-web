@@ -6,21 +6,21 @@
 
 /* LineTableTD */
 .chroma .lntd {
-  vertical-align: top;
   padding: 0;
   margin: 0;
+  vertical-align: top;
   border: 0;
 }
 
 /* LineTable */
 .chroma .lntable {
-  border-spacing: 0;
+  display: block;
+  width: auto;
   padding: 0;
   margin: 0;
-  border: 0;
-  width: auto;
   overflow: auto;
-  display: block;
+  border-spacing: 0;
+  border: 0;
 }
 
 /* LineHighlight */
@@ -32,15 +32,15 @@
 
 /* LineNumbersTable */
 .chroma .lnt {
-  margin-right: 0.4em;
   padding: 0 0.4em;
+  margin-right: 0.4em;
   color: #7f7f7f;
 }
 
 /* LineNumbers */
 .chroma .ln {
-  margin-right: 0.4em;
   padding: 0 0.4em;
+  margin-right: 0.4em;
   color: #7f7f7f;
 }
 
@@ -56,8 +56,8 @@
 
 /* KeywordDeclaration */
 .chroma .kd {
-  color: #8be9fd;
   font-style: italic;
+  color: #8be9fd;
 }
 
 /* KeywordNamespace */
@@ -87,8 +87,8 @@
 
 /* NameBuiltin */
 .chroma .nb {
-  color: #8be9fd;
   font-style: italic;
+  color: #8be9fd;
 }
 
 /* NameClass */
@@ -103,8 +103,8 @@
 
 /* NameLabel */
 .chroma .nl {
-  color: #8be9fd;
   font-style: italic;
+  color: #8be9fd;
 }
 
 /* NameTag */
@@ -114,26 +114,26 @@
 
 /* NameVariable */
 .chroma .nv {
-  color: #8be9fd;
   font-style: italic;
+  color: #8be9fd;
 }
 
 /* NameVariableClass */
 .chroma .vc {
-  color: #8be9fd;
   font-style: italic;
+  color: #8be9fd;
 }
 
 /* NameVariableGlobal */
 .chroma .vg {
-  color: #8be9fd;
   font-style: italic;
+  color: #8be9fd;
 }
 
 /* NameVariableInstance */
 .chroma .vi {
-  color: #8be9fd;
   font-style: italic;
+  color: #8be9fd;
 }
 
 /* LiteralString */
