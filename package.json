@@ -18,6 +18,7 @@
     "prestart": "npm run clean",
     "start": "exec-bin node_modules/.bin/hugo/hugo server  --bind=localhost --disableFastRender --baseURL=http://localhost",
     "start:lan": "exec-bin node_modules/.bin/hugo/hugo server --bind=localhost --baseURL=http://192.168.1.10 --port=1313",
+    "start:minify": "exec-bin node_modules/.bin/hugo/hugo server --gc --minify --bind=localhost --baseURL=http://localhost",
     "prebuild": "npm run clean",
     "build": "exec-bin node_modules/.bin/hugo/hugo --gc --minify",
     "build:lan": "exec-bin node_modules/.bin/hugo/hugo --gc --minify --baseURL=http://192.168.1.10:8080",
@@ -36,7 +37,6 @@
     "check": "exec-bin node_modules/.bin/hugo/hugo version",
     "latest:hugo": "gh release view --repo gohugoio/hugo",
     "latest:hyas": "gh release view --repo h-enk/hyas",
-    "copy:katex-fonts": "shx cp ./node_modules/katex/dist/fonts/* ./static/fonts/",
     "postinstall": "hugo-installer --version otherDependencies.hugo --extended --destination node_modules/.bin/hugo",
     "version": "auto-changelog -p && git add CHANGELOG.md"
   },
