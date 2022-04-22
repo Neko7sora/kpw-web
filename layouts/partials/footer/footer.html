@@ -1,5 +1,16 @@
-<footer class="footer text-muted">
-  <div class="container">{{ $data := getJSON "package.json" }}
-    <p class="m-0 text-center">{{ .Site.Params.footer | safeHTML }}</p><p class="m-0 text-center meta">Open-source {{ $data.license }} Licensed. <a href="{{ $data.repository }}">GitHub v{{ $data.version }}</a></p>
+<footer class="footer">
+  <div class="container">
+    {{ $data := getJSON "package.json" }}
+    <p
+      class="m-0 text-center"{{ with .GitInfo }}
+      title="Page Commit: {{ .Hash }}
+      Desc: {{ .Subject }}
+      Author: {{ .AuthorName }}
+      Date: {{ .AuthorDate }}
+      Repo: {{ $data.repository }}"
+      {{ end }}
+    >
+      {{ $.Site.Params.footer | safeHTML }}
+    </p>
   </div>
 </footer>
