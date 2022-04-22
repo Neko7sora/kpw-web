@@ -52,7 +52,6 @@ h6,
 }
 
 .section {
-  padding-top: 5rem;
   padding-bottom: 5rem;
   background: $gray-200;
 }
@@ -60,7 +59,7 @@ h6,
 .section p,
 .section a {
   margin: 0;
-  text-align: center;
+  text-align: left;
 }
 
 .section svg {

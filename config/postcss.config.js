@@ -20,6 +20,7 @@ module.exports = {
         'td',
         'h3',
         'alert-link',
+        'table-hover',
         ...whitelister([
           './assets/scss/components/_alerts.scss',
           // './assets/scss/components/_buttons.scss',
