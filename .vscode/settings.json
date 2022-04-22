@@ -8,7 +8,8 @@
     "**/CVS": true,
     "**/Thumbs.db": true,
     "**/CODEOWNERS": true,
-    "LICENSE.*": false
+    "LICENSE.*": false,
+    "node_modules": true
   },
   "files.exclude": {
     "**/.DS_Store": true,
@@ -18,9 +19,44 @@
     "**/CVS": true,
     "**/Thumbs.db": true,
     "**/CODEOWNERS": true,
-    "LICENSE.*": false
+    "LICENSE.*": false,
+    "node_modules": true,
   },
   "files.autoGuessEncoding": true,
   "editor.renderControlCharacters": true,
-  "editor.renderWhitespace": "all"
+  "editor.renderWhitespace": "all",
+  "eslint.enable": true,
+  "stylelint.enable": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true,
+    "source.fixAll.markdownlint": true
+  },
+  "[scss]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "stylelint.vscode-stylelint"
+  },
+  "[css]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "stylelint.vscode-stylelint"
+  },
+  "stylelint.validate": [
+    "css",
+    "scss"
+  ],
+  "scss.validate": false,
+  "css.validate": false,
+  "[js]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[markdown]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true
+  },
+  "markdownlint.ignore": [
+    "node_modules",
+    "CHANGELOG.md",
+    "README.md"
+  ],
 }
