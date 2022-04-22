@@ -1,14 +1,16 @@
 baseurl = "https://www.kamesuta.com/"
 canonifyURLs = false
+defaultContentLanguage = "ja"
 disableAliases = true
 disableHugoGeneratorInject = true
 disableKinds = ["taxonomy", "taxonomyTerm"]
 enableEmoji = true
-enableGitInfo = false
+enableGitInfo = true
 enableRobotsTXT = true
 languageCode = "ja-JP"
 paginate = 7
 rssLimit = 10
+hasCJKLanguage = true
 
 # add redirects/headers
 [outputs]
