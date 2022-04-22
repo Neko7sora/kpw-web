@@ -39,7 +39,7 @@ quality = 100
 bgColor = "#fff"
 landscapePhotoWidths = [900, 800, 700, 600, 500]
 portraitPhotoWidths = [800, 700, 600, 500]
-lqipWidth = "20x"
+lqipWidth = "20x webp q100"
 smallLimit = "320"
 
 ### Image template
