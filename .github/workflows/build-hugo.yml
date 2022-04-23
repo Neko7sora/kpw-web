@@ -1,3 +1,9 @@
+permissions:
+  contents: read
+  pages: write
+  deployments: write
+  id-token: write
+
 name: "Hugo build and deployment"
 
 on:
@@ -6,13 +12,16 @@ on:
     branches:
       - gh-pages # Set a branch to deploy
 
+env:
+  BRANCH_TO_DEPLOY: "develop"
+
 jobs:
   build:
     runs-on: ubuntu-20.04
 
     steps:
       - name: Check out Hyas project
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           submodules: true
 
@@ -30,7 +39,7 @@ jobs:
       - name: Archive build output
         run: tar --dereference --hard-dereference --directory public/ -cvf artifact.tar .
       - name: Upload Artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: github-pages
           path: ./artifact.tar
