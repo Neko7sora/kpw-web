@@ -1,13 +1,13 @@
 ---
 title: "Web"
-description: "ウェブサイトの作り方"
+description: "Webサイトの作り方"
 date: 2022-04-22T19:11:17+09:00
 lastmod: 2022-04-22T19:11:17+09:00
 draft: false
 images: []
 ---
 
-## ウェブサイトの作り方～！
+## Web サイトの作り方～！
 
 ### 1. サイトを Fork する
 

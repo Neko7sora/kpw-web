@@ -4,12 +4,12 @@
 title = "KamePowerWorld"
 titleSeparator = "-"
 titleAddition = "かめぱわぁ～るど"
-description = "かめぱわぁ～るどのウェブサイトへようこそ～！"
+description = "かめぱわぁ～るどのWWebサイトへようこそ～！"
 
 ## Open Graph
 images = ["kame.png"]
 ogLocale = "ja_JP"
-titleHome = "かめぱわ～"
+titleHome = "かめぱわぁ～るど"
 
 ## Twitter Cards
 ## https://developer.twitter.com/ja/docs/tweets/optimize-with-cards/guides/getting-started
@@ -55,4 +55,4 @@ copyRight = "Copyright (c) 2022 KamePowerWorld"
 # Alert
 alert = false
 alertDismissable = true
-alertText = "かめぱわぁ～るどのウェブサイトへようこそ～！"
+alertText = "かめぱわぁ～るどのWebサイトへようこそ～！"
