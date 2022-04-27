@@ -1,6 +1,7 @@
 {
   "name": "www.kamesuta.com",
   "description": "KamePowerWorld Website",
+  "packageManager": "yarn@3.2.0",
   "version": "1.0.0",
   "browserslist": [
     "defaults",
@@ -59,7 +60,7 @@
     "purgecss-whitelister": "2.4.0",
     "quicklink": "2.2.0",
     "shx": "0.3.4",
-    "stylelint": "^14.7.1",
+    "stylelint": "^14.8.0",
     "stylelint-config-recess-order": "^3.0.0",
     "stylelint-config-standard-scss": "3.0.0"
   },
