@@ -36,6 +36,12 @@ jobs:
       - name: Build production website
         run: yarn run build
 
+      - name: Brotli compress the html, css and js files
+        id: brotli
+        uses: KamePowerWorld/brotli-action@master
+        with:
+          target-directory: 'public'
+
       - name: Archive build output
         run: tar --dereference --hard-dereference --directory public/ -cvf artifact.tar .
       - name: Upload Artifact
