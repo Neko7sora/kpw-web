@@ -10,7 +10,7 @@
     <div class="ms-auto">
     {{ range .Site.Menus.main }}
       <span class="navbar-text">
-        <a href="{{ .URL }}">{{- .Name | safeHTML -}}</a>
+        <a href="{{ .URL }}" aria-label="{{ .URL }}">{{- .Name | safeHTML -}}</a>
       </span>
     {{ end }}
     </div>
