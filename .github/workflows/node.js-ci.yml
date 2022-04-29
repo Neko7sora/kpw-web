@@ -23,7 +23,9 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
-          cache: 'yarn'
+
+      - name: corepack enable yarn
+        run: corepack enable yarn
 
       - name: Install dependencies
         run: yarn
