@@ -17,7 +17,7 @@ images: []
 
 ### 2. ローカルでテストする
 
-- ローカルで ↓ を**参考にして**、Node.js LTS を入れて`npm install -g yarn && yarn`する
+- ローカルで ↓ を**参考にして**、Node.js LTS を入れて`corepack enable yarn && yarn`する
 
   [https://qiita.com/sefoo0104/items/0653c935ea4a4db9dc2b](https://qiita.com/sefoo0104/items/0653c935ea4a4db9dc2b)
 
