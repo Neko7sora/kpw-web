@@ -6,9 +6,38 @@
     {{ $movie := resources.GetRemote "https://cdn.discordapp.com/attachments/934470551194447932/965925659513880596/kamepaworld2_2.mp4" }}
     <video src="{{ $movie.RelPermalink }}" class="img-fluid lazyload blur-up" autoplay muted controls></video>
     <br>
-    <a class="btn btn-dark px-3" href="{{ "dev/web/" | absURL }}" role="button">Webサイトの作り方</a>
-    <a class="btn btn-outline-dark px-3" href="{{ "org/profile-outline/" | absURL }}" role="button">組織について</a>
+    <div class="row">
+  <div class="col-md-12 col-lg-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Webサイトの作り方</h5>
+        <p class="card-text">Web サイトの仕様書などについて</p>
+        <a href="{{ "dev/web/" | absURL }}" class="btn btn-dark">Go /dev/web</a>
+      </div>
+    </div>
   </div>
+  <div class="col-md-12 col-lg-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">組織について</h5>
+        <p class="card-text">かめぱわぁ～るど (英文表記: KamePowerWorld)</p>
+        <a href="{{ "org/profile-outline/" | absURL }}" class="btn btn-dark">Go /org/profile-outline</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+<div class="col-md-12 col-lg-6">
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">マインクラフトサーバー</h5>
+    <p class="card-text">生活サーバー、Modサーバーについて</p>
+    <a href="{{ "minecraft/" | absURL }}" class="btn btn-dark">Go /minecraft</a>
+  </div>
+</div>
+</div>
+</div>
+</div>
 </div>
 {{ end }}
 

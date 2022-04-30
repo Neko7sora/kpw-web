@@ -20,3 +20,28 @@ body {
   min-height: 100vh;
   background: linear-gradient(165deg, #f7f5fb 50%, #fff 50%);
 }
+
+blockquote {
+  position: relative;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  font-style: italic;
+  color: #464646;
+  background: #f3f3f3;
+  border-left: solid 10px #c4c4c4;
+}
+
+blockquote p {
+  position: relative;
+  z-index: 3;
+  padding: 0;
+  margin: 10px 0;
+  line-height: 1.7;
+}
+
+blockquote cite {
+  display: block;
+  font-size: 0.9em;
+  color: #888;
+  text-align: right;
+}
