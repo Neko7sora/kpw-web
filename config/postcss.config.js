@@ -21,6 +21,7 @@ module.exports = {
         'h3',
         'alert-link',
         'table-hover',
+        'blockquote',
         ...whitelister([
           './assets/scss/components/_alerts.scss',
           // './assets/scss/components/_buttons.scss',
