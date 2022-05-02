@@ -1,0 +1,45 @@
+name: "dependencies-update"
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 19 * * 6"
+
+jobs:
+  create-pr:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: "16"
+      - run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout develop
+          git checkout -b "update-dependencies"
+      - name: yarn upgrade
+        shell: bash
+        run: |
+          corepack enable yarn
+
+          yarn up '*' --recursive
+
+          yarn up '@*/*' --recursive
+
+          yarn dedupe
+        env:
+          YARN_ENABLE_IMMUTABLE_INSTALLS: 0
+      - name: Push
+        shell: bash
+        continue-on-error: true
+        run: |
+          git add .
+          git commit -m "Update dependencies" -a
+          git push -u origin "update-dependencies"
+          hub pull-request -b develop -m "Update dependencies" -h "update-dependencies"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
