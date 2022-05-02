@@ -20,7 +20,7 @@
     "**/Thumbs.db": true,
     "**/CODEOWNERS": true,
     "LICENSE.*": false,
-    "node_modules": true,
+    "node_modules": false,
   },
   "files.autoGuessEncoding": true,
   "editor.renderControlCharacters": true,

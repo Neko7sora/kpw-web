@@ -17,7 +17,7 @@ images: []
 
 ### 2. ローカルでテストする
 
-- ローカルで ↓ を**参考にして**、Node.js LTS を入れて`corepack enable yarn && yarn`する
+- ローカルで ↓ を**参考にして**、Node.js LTS を入れて`corepack enable pnpm && pnpm`する
 
   [https://qiita.com/sefoo0104/items/0653c935ea4a4db9dc2b](https://qiita.com/sefoo0104/items/0653c935ea4a4db9dc2b)
 
@@ -30,7 +30,7 @@ images: []
   コマンド:
 
   ```bash
-  yarn start
+  pnpm start
   ```
 
 ### 3. HTML や markdown などのコードを編集し、[2]で立ち上げたローカルサーバーのプレビューで変更を確認する

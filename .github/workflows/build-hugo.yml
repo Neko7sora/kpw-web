@@ -35,13 +35,13 @@ jobs:
           node-version: 16.x
 
       - name: Enable corepack
-        run: corepack enable yarn
+        run: corepack enable pnpm
 
       - name: Install dependencies
-        run: yarn
+        run: pnpm i
 
       - name: Build production website
-        run: yarn run build
+        run: pnpm run build
 
       - name: Brotli compress the html, css and js files
         id: brotli
