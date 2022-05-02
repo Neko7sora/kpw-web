@@ -1,4 +1,4 @@
-name: Hyas CI
+name: Node-js-CI
 
 on:
   push:
@@ -16,7 +16,7 @@ jobs:
         node: [16.x]
 
     steps:
-      - name: Check out Hyas project
+      - name: Check out project
         uses: actions/checkout@v3
 
       - name: Set up Node.js ${{ matrix.node }}
@@ -30,7 +30,7 @@ jobs:
       - name: Install dependencies
         run: yarn
 
-      - name: Run Hyas test script
+      - name: Run test script
         run: yarn test
 
       - name: Build production website
