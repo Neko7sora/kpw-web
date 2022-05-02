@@ -48,8 +48,7 @@ jobs:
         git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
     - name: Commit changes
       run: |
-        cd .`git log -1 --pretty=%s | awk '{ print $9 }'` # ditto
-        git add yarn.lock
+        git add .
         git commit -m "Dependabot autofix"
         git push
 
