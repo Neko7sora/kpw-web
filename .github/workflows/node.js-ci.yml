@@ -1,4 +1,4 @@
-name: Hyas CI
+name: Node.js CI
 
 on:
   push:
@@ -6,8 +6,55 @@ on:
   pull_request:
     branches: [develop]
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
+
+  check: ##fix yarn v3 lockfile updated by dependabot
+    runs-on: ubuntu-latest
+    if: github.actor == 'dependabot[bot]'
+
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 2
+        persist-credentials: false # minimize exposure
+    - name: Use Node.js 16.x
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16'
+    - name: Autofix lockfile
+      run: |
+        corepack enable yarn
+
+        git checkout HEAD^ -- yarn.lock
+
+        git diff --name-only HEAD^ HEAD | grep -q 'package.json' || yarn up `git log -1 --pretty=%s | awk '{ print $3 }'`
+
+        git checkout HEAD -- package.json
+
+        yarn install
+
+        # deduplicate lockfile
+        yarn dedupe
+      env:
+        YARN_ENABLE_SCRIPTS: 0 # disable postinstall scripts
+        YARN_ENABLE_IMMUTABLE_INSTALLS: 0
+    - name: Config Git
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
+    - name: Commit changes
+      run: |
+        cd .`git log -1 --pretty=%s | awk '{ print $9 }'` # ditto
+        git add yarn.lock
+        git commit -m "Dependabot autofix"
+        git push
+
   build:
+    needs: check
     runs-on: ${{ matrix.os }}
 
     strategy:
@@ -16,7 +63,7 @@ jobs:
         node: [16.x]
 
     steps:
-      - name: Check out Hyas project
+      - name: Check out project
         uses: actions/checkout@v3
 
       - name: Set up Node.js ${{ matrix.node }}
@@ -30,7 +77,7 @@ jobs:
       - name: Install dependencies
         run: yarn
 
-      - name: Run Hyas test script
+      - name: Run test script
         run: yarn test
 
       - name: Build production website
