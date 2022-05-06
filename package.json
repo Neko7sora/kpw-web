@@ -3,6 +3,16 @@
   "description": "KamePowerWorld Website",
   "packageManager": "pnpm@7.0.0",
   "version": "1.0.0",
+  "repository": "https://github.com/KamePowerWorld/www.kamesuta.com",
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": ">=16",
+    "pnpm": ">=7"
+  },
+  "volta": {
+    "node": "16.15.0"
+  },
   "browserslist": [
     "defaults",
     "not IE 11",
@@ -10,12 +20,6 @@
     "maintained node versions",
     "not dead"
   ],
-  "repository": "https://github.com/KamePowerWorld/www.kamesuta.com",
-  "license": "MIT",
-  "private": true,
-  "engines": {
-    "node": ">=16"
-  },
   "scripts": {
     "init": "shx rm -rf .git && git init -b main",
     "create": "exec-bin node_modules/.bin/hugo/hugo new",
