@@ -53,6 +53,6 @@ footer = "Copyright (c) 2022 KamePowerWorld"
 copyRight = "Copyright (c) 2022 KamePowerWorld"
 
 # Alert
-alert = false
-alertDismissable = true
-alertText = "かめぱわぁ～るどのWebサイトへようこそ～！"
+alert = true
+alertDismissable = false
+alertText = "【 生活サーバーシーズン 3 】 今回の地形の生成方法は「アンプリファイド」 mcMMO プラグインにより Minecraft の世界に RPG のような体験を！！"
