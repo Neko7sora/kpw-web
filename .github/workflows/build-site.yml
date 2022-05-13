@@ -1,4 +1,4 @@
-name: "Hugo-build-and-deployment"
+name: "Site-build-and-deployment"
 
 permissions:
   contents: read
@@ -40,17 +40,30 @@ jobs:
       - name: Install dependencies
         run: pnpm i
 
-      - name: Build production website
+      - name: Build hugo website
         run: pnpm run build
+
+      - name: Move files
+        run: mv -v -f Subproject/docs/* .
+
+      - uses: actions/setup-python@v3
+        with:
+          python-version: 3.x
+
+      - run: pip install mkdocs-material
+
+      - name: Build mkdocs website
+        run: mkdocs build --site-dir public/docs
 
       - name: Brotli compress the html, css and js files
         id: brotli
         uses: KamePowerWorld/brotli-action@master
         with:
-          target-directory: 'public'
+          target-directory: "public"
 
       - name: Archive build output
         run: tar --dereference --hard-dereference --directory public/ -cvf artifact.tar .
+
       - name: Upload Artifact
         uses: actions/upload-artifact@v3
         with:

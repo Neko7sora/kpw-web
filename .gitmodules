@@ -1,0 +1,3 @@
+[submodule "Subproject/docs"]
+	path = Subproject/docs
+	url = https://github.com/KamePowerWorld/www.kamesuta.com-docs.git
