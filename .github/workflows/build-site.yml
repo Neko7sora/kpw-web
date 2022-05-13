@@ -11,6 +11,8 @@ on:
   push:
     branches:
       - develop # Set a branch to deploy
+  schedule:
+    - cron: '0 * * * *'
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -49,6 +51,8 @@ jobs:
       - uses: actions/setup-python@v3
         with:
           python-version: 3.x
+
+      - run: git submodule update --remote
 
       - run: pip install mkdocs-material
 
