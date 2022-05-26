@@ -2,14 +2,14 @@
 
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js');
 
-const HTML_CACHE = "html";
-const JS_CACHE = "javascript";
-const STYLE_CACHE = "stylesheets";
-const IMAGE_CACHE = "images";
-const FONT_CACHE = "fonts";
+const HTML_CACHE = 'html';
+const JS_CACHE = 'javascript';
+const STYLE_CACHE = 'stylesheets';
+const IMAGE_CACHE = 'images';
+const FONT_CACHE = 'fonts';
 
-self.addEventListener("message", (event) => {
-  if (event.data && event.data.type === "SKIP_WAITING") {
+self.addEventListener('message', (event) => {
+  if (event.data && event.data.type === 'SKIP_WAITING') {
     self.skipWaiting();
   }
 });
@@ -20,7 +20,7 @@ workbox.routing.registerRoute(
     cacheName: HTML_CACHE,
     plugins: [
       new workbox.expiration.ExpirationPlugin({
-        maxEntries: 10,
+        maxEntries: 25,
       }),
     ],
   })
@@ -56,7 +56,7 @@ workbox.routing.registerRoute(
     cacheName: IMAGE_CACHE,
     plugins: [
       new workbox.expiration.ExpirationPlugin({
-        maxEntries: 15,
+        maxEntries: 50,
       }),
     ],
   })
@@ -68,7 +68,7 @@ workbox.routing.registerRoute(
     cacheName: FONT_CACHE,
     plugins: [
       new workbox.expiration.ExpirationPlugin({
-        maxEntries: 15,
+        maxEntries: 50,
       }),
     ],
   })
