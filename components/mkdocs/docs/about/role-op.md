@@ -1,7 +1,7 @@
 # Role OP
 
 !!! Info
-    「かめぱわぁ～るど」のマイクラサーバーでOP権限を持っているプレイヤー
+「かめぱわぁ～るど」のマイクラサーバーで OP 権限を持っているプレイヤー
 
 ## OP
 
@@ -62,13 +62,7 @@ MCID: `Away_From_K8S`
 
 ### ![MoriMori_0317_jp](https://minotar.net/helm/0f286fc20c8642d58518c306cad74f03/25) MORIMORI
 
-たまにMODを翻訳したりしてます。
-バグやガバを発見したやつ、至急、issueくれや。
+たまに MOD を翻訳したりしてます。
+バグやガバを発見したやつ、至急、issue くれや。
 
 MCID: `MoriMori_0317_jp`
-
-### ![Els__7f](https://minotar.net/helm/42adea14372f4dcb86aa26e9933aaf14/25) カリッと枝豆
-
-！
-
-MCID: `Els__7f`
