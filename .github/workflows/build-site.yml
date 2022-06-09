@@ -10,9 +10,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - develop # Set a branch to deploy
-  schedule:
-    - cron: '0 * * * *'
+      - develop
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -28,8 +26,6 @@ jobs:
     steps:
       - name: Check out project
         uses: actions/checkout@v3
-        with:
-          submodules: true
 
       - name: Set up Node.js 16.x
         uses: actions/setup-node@v3
@@ -45,10 +41,8 @@ jobs:
       - name: Build hugo website
         run: pnpm run build
 
-      - run: git submodule update --remote
-
       - name: Move files
-        run: mv -v -f Subproject/docs/* .
+        run: mv -v -f components/docs/* .
 
       - uses: actions/setup-python@v3
         with:

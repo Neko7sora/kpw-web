@@ -1,0 +1,65 @@
+site_name: KamePowerWorldDocs
+site_url: https://kamesuta.com/docs/
+theme:
+  name: material
+  custom_dir: overrides
+  language: ja
+  icon:
+    logo: material/order-alphabetical-descending
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+      primary: teal
+    - scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+      primary: teal
+  font:
+    text: BIZ UDPGothic
+    code: BIZ UDGothic
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.expand
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/KamePowerWorld
+      name: KamePowerWorld on GitHub
+
+copyright: Copyright (c) 2022 KamePowerWorld
+
+repo_name: /docs Git Repo
+repo_url: https://github.com/KamePowerWorld/www.kamesuta.com-docs
+
+edit_uri: edit/main/docs/
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - tables
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+extra_javascript:
+  - javascripts/index.js
+
+plugins:
+  - minify:
+      minify_html: true
+      minify_js: false
+      minify_css: false
+      htmlmin_opts:
+          remove_comments: true

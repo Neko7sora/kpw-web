@@ -1,0 +1,18 @@
+{
+  "name": "kamepowerworld-esbuild",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "esbuild index.ts --bundle --outfile=../../docs/javascripts/index.js --format=esm  --target=es2021 --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "esbuild": "^0.14.39",
+    "quicklink": "^2.2.0",
+    "tablesort": "^5.3.0"
+  }
+}

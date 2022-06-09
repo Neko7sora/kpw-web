@@ -1,0 +1,25 @@
+# EditorConfig is awesome: https://EditorConfig.org
+# top-most EditorConfig file
+root = true
+
+[*]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.min.*]
+indent_style = space
+indent_size = 0
+insert_final_newline = false
+
+[CNAME]
+insert_final_newline = false
+
+[*.{json,yml,yaml,lock,hbs,xml}]
+insert_final_newline = false
+
+[.{node-version,editorconfig,git*}]
+insert_final_newline = false
