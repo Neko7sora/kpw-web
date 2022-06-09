@@ -42,7 +42,7 @@ jobs:
         run: pnpm run build
 
       - name: Move files
-        run: mv -v -f components/docs/* .
+        run: mv -v -f components/mkdocs/* .
 
       - uses: actions/setup-python@v3
         with:
