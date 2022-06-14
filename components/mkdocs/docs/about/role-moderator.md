@@ -78,9 +78,3 @@ MCID: `murayu0225`
 あくたんのこと好きすぎ ☆
 
 MCID: `yuu_111`
-
-### ![Rin__7c](https://minotar.net/helm/0103c7b7d79d4770944d35862edbedc4/25) りん
-
-りんかめです！\* \_)
-
-MCID: `Rin__7c`
