@@ -66,9 +66,3 @@ MCID: `Away_From_K8S`
 バグやガバを発見したやつ、至急、issueくれや。
 
 MCID: `MoriMori_0317_jp`
-
-### ![Els__7f](https://minotar.net/helm/42adea14372f4dcb86aa26e9933aaf14/25) カリッと枝豆
-
-！
-
-MCID: `Els__7f`
