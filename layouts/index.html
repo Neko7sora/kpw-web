@@ -3,9 +3,15 @@
   <div class="col-lg-12 pb-5 text-center">
     <h1><b>{{ .Title }}</b></h1>
     <p>{{ .Params.Lead | safeHTML }}</p>
-    {{ $movie := resources.GetRemote "https://cdn.discordapp.com/attachments/934470551194447932/965925659513880596/kamepaworld2_2.mp4" }}
+    {{ $movie := resources.GetRemote
+    "https://cdn.discordapp.com/attachments/934470551194447932/965925659513880596/kamepaworld2_2.mp4" }}
     <video src="{{ $movie.RelPermalink }}" class="img-fluid lazyload blur-up" autoplay muted controls></video>
-</div>
+    <p>
+    </p>
+    <div class="aboutButton">
+      <a>{{ .Params.about | safeHTML }}</a>
+    </div>
+  </div>
 </div>
 {{ end }}
 
