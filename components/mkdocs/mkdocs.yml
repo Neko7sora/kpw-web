@@ -34,10 +34,10 @@ extra:
 
 copyright: Copyright (c) 2022 KamePowerWorld
 
-repo_name: /docs Git Repo
-repo_url: https://github.com/KamePowerWorld/www.kamesuta.com-docs
+repo_name: www.kamesuta.com
+repo_url: https://github.com/KamePowerWorld/www.kamesuta.com
 
-edit_uri: edit/main/docs/
+edit_uri: edit/develop/components/mkdocs/docs/
 
 markdown_extensions:
   - admonition
