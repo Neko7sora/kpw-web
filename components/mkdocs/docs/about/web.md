@@ -3,11 +3,13 @@
 参考程度にしてください！
 
 !!! attention
+
     `www.kamesuta.com/` ルートパスの Web サイトの作り方を記載しています。
 
     このページに記載されている方法は、`www.kamesuta.com/docs` パスの作り方より高度です。
 
 !!! danger
+
     Git Repo: https://github.com/KamePowerWorld/www.kamesuta.com
 
     このリポジトリに不注意で誤ったコミットすると、`www.kamesuta.com/docs` パスに影響を及ぼします。
@@ -65,7 +67,6 @@
 依存関係
 
 [https://github.com/KamePowerWorld/www.kamesuta.com/network/dependencies](https://github.com/KamePowerWorld/www.kamesuta.com/network/dependencies)
-
 
 ### Material for MkDocs (`/docs` パス)
 

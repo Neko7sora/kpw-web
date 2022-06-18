@@ -1,6 +1,7 @@
 # Role police
 
 !!! Info
+
     「かめぱわぁ～るど」のマイクラ生活サーバーでpolice権限を持っているプレイヤー
 
 ## police
