@@ -40,10 +40,6 @@ jobs:
 
       - name: Build hugo website
         run: pnpm run build
-
-      - name: mkdocs dir
-        run: cd components/mkdocs
-
       - uses: actions/setup-python@v3
         with:
           python-version: 3.x
@@ -51,10 +47,7 @@ jobs:
       - run: pip install mkdocs-material mkdocs-minify-plugin
 
       - name: Build mkdocs website
-        run: mkdocs build --site-dir ../../public/docs
-
-      - name: root dir
-        run: cd ../../
+        run: cd ./components/mkdocs && mkdocs build --site-dir ../../public/docs
 
       - name: Brotli compress the html, css and js files
         id: brotli
