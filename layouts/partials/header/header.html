@@ -6,7 +6,7 @@
   <div class="container">
     {{ $image := resources.GetRemote "https://cdn.discordapp.com/attachments/931590427302330399/965171656869941318/kamepawa2.gif" }}
     {{ $image := $image.Resize "60x webp q100" }}
-    <a class="navbar-brand monospace" href="{{ "/" | absURL }}"><img src="{{ $image.RelPermalink }}" class="img-fluid" width="{{ $image.Width }}" height="{{ $image.Height }}" alt=""> {{ .Site.Params.Title }}</a>
+    <a class="navbar-brand monospace" href="{{ "/" | absURL }}"><img src="{{ $image.RelPermalink }}" class="img-fluid" width="60" height="60" alt=""> {{ .Site.Params.Title }}</a>
     <div class="ms-auto">
     {{ range .Site.Menus.main }}
       <span class="navbar-text">
