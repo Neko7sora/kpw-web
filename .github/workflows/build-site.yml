@@ -49,6 +49,10 @@ jobs:
       - name: Build mkdocs website
         run: cd ./components/mkdocs && mkdocs build --site-dir ../../public/docs
 
+      - name: minify
+        id: minify
+        run: pnpm minify
+
       - name: Brotli compress the html, css and js files
         id: brotli
         uses: KamePowerWorld/brotli-action@master

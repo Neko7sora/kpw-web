@@ -55,11 +55,3 @@ markdown_extensions:
 
 extra_javascript:
   - javascripts/index.js
-
-plugins:
-  - minify:
-      minify_html: true
-      minify_js: false
-      minify_css: false
-      htmlmin_opts:
-          remove_comments: true
