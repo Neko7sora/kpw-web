@@ -65,6 +65,6 @@
     "@pwabuilder/pwaupdate": "0.2.1"
   },
   "otherDependencies": {
-    "hugo": "0.99.1"
+    "hugo": "0.100.2"
   }
 }
