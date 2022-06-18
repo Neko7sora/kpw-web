@@ -9,7 +9,7 @@
     <br>
     <br>
     <div class="aboutbutton">
-      <a href="./docs/about/">{{ .Params.about | safeHTML }}</a>
+      <a href="{{ "/docs/about" | absURL }}">{{ .Params.about | safeHTML }}</a>
     </div>
   </div>
 </div>
