@@ -28,6 +28,12 @@ theme:
 
 extra:
   social:
+    - icon: fontawesome/solid/house-chimney
+      link: https://www.kamesuta.com
+      name: KamePowerWorld on Website
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/kamepower
+      name: KamePowerWorld on Discord
     - icon: fontawesome/brands/github
       link: https://github.com/KamePowerWorld
       name: KamePowerWorld on GitHub
@@ -55,3 +61,6 @@ markdown_extensions:
 
 extra_javascript:
   - javascripts/index.js
+
+extra_css:
+  - stylesheets/index.css
