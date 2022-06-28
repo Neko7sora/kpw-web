@@ -1,4 +1,4 @@
-site_name: KamePowerWorldDocs
+site_name: かめぱわぁ～るどドキュメント
 site_url: https://kamesuta.com/docs/
 theme:
   name: material
@@ -30,15 +30,15 @@ extra:
   social:
     - icon: fontawesome/solid/house-chimney
       link: https://www.kamesuta.com
-      name: KamePowerWorld on Website
+      name: かめぱわぁ～るど Webサイト
     - icon: fontawesome/brands/discord
       link: https://discord.gg/kamepower
-      name: KamePowerWorld on Discord
+      name: かめぱわぁ～るど Discord
     - icon: fontawesome/brands/github
       link: https://github.com/KamePowerWorld
-      name: KamePowerWorld on GitHub
+      name: かめぱわぁ～るど GitHub
 
-copyright: Copyright (c) 2022 KamePowerWorld
+copyright: Copyright (c) 2022 かめぱわぁ～るど
 
 repo_name: www.kamesuta.com
 repo_url: https://github.com/KamePowerWorld/www.kamesuta.com

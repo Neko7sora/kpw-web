@@ -1,7 +1,7 @@
 # Meta Data for SEO
 
 ## Homepage
-title = "KamePowerWorld"
+title = "かめぱわぁ～るど"
 titleSeparator = "-"
 titleAddition = "かめぱわぁ～るど"
 description = "かめぱわぁ～るどのWWebサイトへようこそ～！"
@@ -19,8 +19,8 @@ twitterCreator = ""
 ## JSON-LD
 # schemaType = "Person"
 schemaType = "Organization"
-schemaName = "KamePowerWorld"
-schemaAuthor = "KamePowerWorld-Contributor"
+schemaName = "かめぱわぁ～るど"
+schemaAuthor = "かめぱわぁ～るどコントリビューター"
 schemaAuthorTwitter = ""
 schemaAuthorGitHub = "https://github.com/KamePowerWorld"
 schemaLocale = "ja-JP"
@@ -47,10 +47,10 @@ defaultImage = "default-image.png" # put in `./assets/images/`
 fillImage = "1280x720 Center" # normalize image size
 
 # Footer
-footer = "Copyright (c) 2022 KamePowerWorld"
+footer = "Copyright (c) 2022 かめぱわぁ～るど"
 
 # Feed
-copyRight = "Copyright (c) 2022 KamePowerWorld"
+copyRight = "Copyright (c) 2022 かめぱわぁ～るど"
 
 # Alert
 alert = true
