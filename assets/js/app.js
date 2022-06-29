@@ -8,9 +8,6 @@ import './assets/js/bootstrap.js';
 import { listen } from 'quicklink/dist/quicklink.mjs';
 listen();
 
-// lazy sizes for image loading
-import 'lazysizes';
-
 // global alert
 import './assets/js/alert';
 

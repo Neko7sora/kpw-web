@@ -33,11 +33,3 @@ figure.wide .figure-caption {
     margin: 0.25rem 5rem 0.75rem;
   }
 }
-
-.blur-up {
-  filter: blur(5px);
-}
-
-.blur-up.lazyloaded {
-  filter: unset;
-}
