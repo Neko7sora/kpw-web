@@ -11,6 +11,7 @@ languageCode = "ja-JP"
 paginate = 7
 rssLimit = 10
 hasCJKLanguage = true
+publishDir = "./../../../public"
 
 # add redirects/headers
 [outputs]

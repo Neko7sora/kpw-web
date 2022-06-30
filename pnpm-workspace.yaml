@@ -1,0 +1,3 @@
+packages:
+  - 'path/root/hugo/'
+  - 'path/docs/mkdocs/'

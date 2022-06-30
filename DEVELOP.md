@@ -4,15 +4,26 @@
 
 - `develop` : 開発版
 
-## Node.js
+## 必要環境
+
+- Node.js v16+
+- pnpm v7+
+- pip
 
 コマンドを使える必要があります。
 
-- `pnpm i` : 必要なライブラリを全てインストール(hugo もインストールされます)
+- `pnpm i` : 必要なライブラリを全てインストール(hugo,mkdocs もインストールされます)
+
+### `cd path/root/hugo`
+
 - `pnpm run start` : プレビューサーバーを起動
 - `pnpm run build` : 静的エクスポート
-- `pnpm run lint` : コードや Markdown の校正
-- `pnpm hugo new <posts/my-first-post.md>`: <content/posts/my-first-post.md> の作成 (archtypes/default.md を元に作成)
+- `pnpm run lint` : コードの校正
+
+### `cd path/docs/mkdocs`
+
+- `mkdocs serve` : プレビューサーバーを起動
+- `mkdocs build` : 静的エクスポート
 
 ## lint
 

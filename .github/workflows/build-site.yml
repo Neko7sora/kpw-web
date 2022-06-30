@@ -32,6 +32,10 @@ jobs:
         with:
           node-version: 16.x
 
+      - uses: actions/setup-python@v3
+        with:
+          python-version: 3.x
+
       - name: Enable corepack
         run: corepack enable pnpm
 
@@ -39,15 +43,10 @@ jobs:
         run: pnpm i
 
       - name: Build hugo website
-        run: pnpm run build
-      - uses: actions/setup-python@v3
-        with:
-          python-version: 3.x
-
-      - run: pip install mkdocs-material mkdocs-minify-plugin
+        run: cd ./path/root/hugo && pnpm run build
 
       - name: Build mkdocs website
-        run: cd ./components/mkdocs && mkdocs build --site-dir ../../public/docs
+        run: cd ./path/docs/mkdocs && mkdocs build --site-dir ../../../public/docs
 
       - name: minify
         id: minify
