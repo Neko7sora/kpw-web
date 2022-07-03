@@ -25,6 +25,9 @@ theme:
     - navigation.tracking
     - navigation.tabs
     - navigation.expand
+    - search.suggest
+    - search.highlight
+    - search.share
 
 extra:
   social:
@@ -43,9 +46,10 @@ copyright: Copyright (c) 2022 かめぱわぁ～るど
 repo_name: www.kamesuta.com
 repo_url: https://github.com/KamePowerWorld/www.kamesuta.com
 
-edit_uri: edit/develop/components/mkdocs/docs/
+edit_uri: edit/develop/path/docs/mkdocs/docs/
 
 markdown_extensions:
+  - meta
   - admonition
   - pymdownx.details
   - pymdownx.superfences
