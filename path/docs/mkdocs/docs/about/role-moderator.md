@@ -25,12 +25,6 @@ MCID: `loodroid64`
 
 MCID: `yupuo`
 
-### ![kei__55](https://minotar.net/helm/6e729daabbec42f0acd21b63976c07cd/25) けい
-
-口が悪いかめぱわぁ～るど鯖管理者
-
-MCID: `kei__55`
-
 ### ![Shimada_Kazuko](https://minotar.net/helm/6741666a6f4f4a278f8b2577ef7fef5a/25) shima
 
 泣きました私は日本人
