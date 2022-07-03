@@ -6,12 +6,6 @@
 
 ## police
 
-### ![Neko7sora](https://minotar.net/helm/e8071d1e878b4978b56fec717cf84bb8/25) Neko7sora
-
-リアル世界のどっかしらにいる
-
-MCID: `Neko7sora`
-
 ### ![Azusa189](https://minotar.net/helm/a921cd1989e74c5bbd2cd87d1e3ac23e/25) Azusa189
 
 EnderSkin

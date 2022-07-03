@@ -67,3 +67,15 @@ MCID: `Away_From_K8S`
 バグやガバを発見したやつ、至急、issue くれや。
 
 MCID: `MoriMori_0317_jp`
+
+### ![Neko7sora](https://minotar.net/helm/e8071d1e878b4978b56fec717cf84bb8/25) Neko7sora
+
+リアル世界のどっかしらにいる
+
+MCID: `Neko7sora`
+
+### ![_solt](https://minotar.net/helm/0e18b3ee3ce140efbfb65185ee223491/25) そると
+
+わー！
+
+MCID: `_solt`

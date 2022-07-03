@@ -6,12 +6,6 @@
 
 ## モデレータ
 
-### ![Neko7sora](https://minotar.net/helm/e8071d1e878b4978b56fec717cf84bb8/25) Neko7sora
-
-リアル世界のどっかしらにいる
-
-MCID: `Neko7sora`
-
 ### ![Bun133](https://minotar.net/helm/0a817aae31f04cbc8fca9a6ba85dd67e/25) Bun133
 
 ぶ～ん
