@@ -22,6 +22,8 @@ env:
 jobs:
   build:
     runs-on: ubuntu-20.04
+    environment:
+      name: production
 
     steps:
       - name: Check out project
