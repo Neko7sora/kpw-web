@@ -16,12 +16,6 @@ MCID: `loodroid64`
 
 MCID: `Shimada_Kazuko`
 
-## ![Smile_NS](https://minotar.net/helm/3b69eb032ea1484f837e8b5cd37bf2d5/25) Smile_NS
-
-よわよわプログラマー
-
-MCID: `Smile_NS`
-
 ## ![MEGAAAAAA06](https://minotar.net/helm/9e98c17e5bbb4ce4b68023dad28227b5/25) MEGA
 
 🌋 基本的になんもしない
