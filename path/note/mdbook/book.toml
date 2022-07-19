@@ -1,0 +1,36 @@
+[book]
+authors = ["Neko7sora"]
+description = "コマンドなどをいろいろノート"
+language = "ja"
+multilingual = false
+src = "src"
+title = "かめぱわぁ～るどノート"
+
+
+[output.html]
+#theme = "my-theme"
+default-theme = "ayu"
+preferred-dark-theme = "ayu"
+curly-quotes = true
+mathjax-support = false
+copy-fonts = true
+#additional-css = ["custom.css", "custom2.css"]
+#additional-js = ["custom.js"]
+no-section-label = false
+git-repository-url = "https://github.com/KamePowerWorld/www.kamesuta.com"
+git-repository-icon = "fa-github"
+edit-url-template = "https://github.com/KamePowerWorld/www.kamesuta.com/edit/develop/path/note/mdbook/src/{path}"
+site-url = "/note/"
+cname = "www.kamesuta.com"
+#input-404 = "404.md"
+
+[output.html.print]
+enable = false    # include support for printable output
+page-break = true # insert page-break after each chapter
+
+[output.html.playground]
+editable = false         # allows editing the source code
+copyable = true          # include the copy button for copying code snippets
+copy-js = true           # includes the JavaScript for the code editor
+line-numbers = false     # displays line numbers for editable code
+runnable = false          # displays a run button for rust code

@@ -44,11 +44,20 @@ jobs:
       - name: Install dependencies
         run: pnpm i
 
+      - name: Install mdbook
+        run: |
+          mkdir mdbook
+          curl -sSL https://github.com/rust-lang/mdBook/releases/download/v0.4.20/mdbook-v0.4.20-x86_64-unknown-linux-gnu.tar.gz | tar -xz --directory=./mdbook
+          echo `pwd`/mdbook >> $GITHUB_PATH
+
       - name: Build hugo website
         run: cd ./path/root/hugo && pnpm run build
 
       - name: Build mkdocs website
         run: cd ./path/docs/mkdocs && mkdocs build --site-dir ../../../public/docs
+
+      - name: Build mdbook website
+        run: cd ./path/note/mdbook && mdbook build --dest-dir ../../../public/note
 
       - name: minify
         id: minify
