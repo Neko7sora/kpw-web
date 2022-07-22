@@ -1,5 +1,5 @@
 const { src, dest } = require('gulp');
-const htmlMinify = require('html-minifier');
+const { minify } = require('html-minifier-terser');
 
 const options = {
   collapseWhitespace: true,
@@ -13,10 +13,10 @@ const options = {
 
 function html() {
   return src('public/**/**.html')
-    .on('data', function (file) {
+    .on('data', async function (file) {
       console.log(file.path);
       const buferFile = Buffer.from(
-        htmlMinify.minify(file.contents.toString(), options)
+        await minify(await file.contents.toString(), options)
       );
       return (file.contents = buferFile);
     })
