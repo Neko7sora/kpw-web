@@ -47,9 +47,6 @@ A: 最悪 BAN になる
 ・配信は許可、ただし概要欄に以下の文をコピペすること ↓
 
 ```
-【Secret】
+■ かめぱわぁ～るどサーバーへの参加方法
+Discordに参加→ https://discord.gg/vyDsT6QKgU
 ```
-
-!!! info
-
-    【Secret】は、Discord サーバー内で確認してください。
