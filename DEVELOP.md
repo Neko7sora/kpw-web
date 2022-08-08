@@ -31,9 +31,9 @@ GitHub に push GitHub Actions 上で自動でビルドが走り GitHub Pages �
 
 ## Flow
 
-`develop` - デフォルトブランチです。Pull Request は原則、このブランチに向けて送ってください。
-`future/{branch_title_name}` - 機能追加系
-`hotfix/{branch_title_name}` - ホットフィックス系 本番で起きている不具合など、すぐに修正したいもの
+- `develop` - デフォルトブランチです。Pull Request は原則、このブランチに向けて送ってください。
+- `future/{branch_title_name}` - 機能追加系
+- `hotfix/{branch_title_name}` - ホットフィックス系 本番で起きている不具合など、すぐに修正したいもの
 
 ## バージョンアップ
 
