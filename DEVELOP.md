@@ -1,14 +1,11 @@
 # 開発者向け情報
 
-## Branch
-
-- `develop` : 開発版
-
 ## 必要環境
 
 - Node.js v16+
 - pnpm v7+
 - pip
+- python v3+
 
 コマンドを使える必要があります。
 
@@ -27,7 +24,7 @@
 
 ## Deploy
 
-GitHub `develop` ブランチに push されると、自動で GitHub Actions 上でビルドが走り GitHub Pages に deploy されます。
+GitHub の `develop` ブランチに push されると、自動で GitHub Actions 上でビルドが走り GitHub Pages に deploy されます。
 
 ## Flow
 
