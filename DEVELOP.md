@@ -27,7 +27,7 @@
 
 ## Deploy
 
-GitHub に push GitHub Actions 上で自動でビルドが走り GitHub Pages に deploy されます。
+GitHub `develop` ブランチに push されると、自動で GitHub Actions 上でビルドが走り GitHub Pages に deploy されます。
 
 ## Flow
 
