@@ -1,14 +1,11 @@
-# 開発の流れ
-
-## Branch
-
-- `develop` : 開発版
+# 開発者向け情報
 
 ## 必要環境
 
 - Node.js v16+
 - pnpm v7+
 - pip
+- python v3+
 
 コマンドを使える必要があります。
 
@@ -25,26 +22,16 @@
 - `mkdocs serve` : プレビューサーバーを起動
 - `mkdocs build` : 静的エクスポート
 
-## lint
-
-自動で校正されるようになっています。
-
-また、VS Code は、保存時に .md は lint されるように設定しています。
-
-## Git
-
-push 時に GitHub Actions にてトリガーで lint が Run します。
-
 ## Deploy
 
-GitHub に push した際、この repository と連携している Cloudflare Pages プロジェクト上で、
-自動でビルドが走り deploy されます。
-また push 時に GitHub Actions によって lint が走ります。
+GitHub の `develop` ブランチに push されると、自動で GitHub Actions 上でビルドが走り GitHub Pages に deploy されます。
 
 ## Flow
 
-- `develop`
+- `develop` - デフォルトブランチです。Pull Request は原則、このブランチに向けて送ってください。
+- `future/{branch_title_name}` - 機能追加系
+- `hotfix/{branch_title_name}` - ホットフィックス系 本番で起きている不具合など、すぐに修正したいもの
 
 ## バージョンアップ
 
-null
+未定
