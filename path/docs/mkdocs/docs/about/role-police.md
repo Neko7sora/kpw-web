@@ -4,51 +4,42 @@
 
     「かめぱわぁ～るど」のマイクラ生活サーバーでpolice権限を持っているプレイヤー
 
-## ![Azusa189](https://minotar.net/helm/a921cd1989e74c5bbd2cd87d1e3ac23e/25) Azusa189
-
-EnderSkin
-
-MCID: `Azusa189`
-
-## ![Fukuringa1246](https://minotar.net/helm/01dc402b1cab416d9f1c2c948dd834fd/25) Fukuringa
-
-ふくりかです
-
-MCID: `Fukuringa1246`
-
-## ![loodroid64](https://minotar.net/helm/84a4d1fd03404fdb99589d1b755b7c1a/25) loodroid64
-
-建築極めたい
-
-MCID: `loodroid64`
-
 ## ![Marvelous_Akio](https://minotar.net/helm/fcc580e66e1f4ab9a8c2f66f983d93e8/25) Marvelous_Akio
-
-素晴らしい
 
 MCID: `Marvelous_Akio`
 
-## ![yupuo](https://minotar.net/helm/a7f4aec4d5e748e9aa40186f361eb0f3/25) noneme
+## ![Pa1umu](https://minotar.net/helm/c8050652df0b4f57bf5b345933f33eae/25) Pa1umu
 
-僕は遅刻機能がデフォルトで付いてます
-遅れたらごめんなさい m(- -;)m
+MCID: `Pa1umu`
 
-MCID: `yupuo`
+## ![_dangomushi_](https://minotar.net/helm/8c05a324800c4c8f94bb56aeb89f4517/25) _dangomushi_
 
-## ![ba1den](https://minotar.net/helm/bb12c87bd11642e28870b43ad1d818a6/25) ba1den
+MCID: `_dangomushi_`
 
-ばいでん
+## ![Ojihan](https://minotar.net/helm/10c499e305ea46028f195261d785e0b6/25) Ojihan
 
-MCID: `ba1den`
+MCID: `Ojihan`
 
-## ![arataku_](https://minotar.net/helm/4a25c68901514a17bd09f9199ce6b5e6/25) arataku
+## ![seshiru_0854](https://minotar.net/helm/3c28baa07b834555b1e4a585b026719b/25) seshiru_0854
 
-こんにちは～
+MCID: `seshiru_0854`
 
-MCID: `arataku_`
+## ![_hayachan](https://minotar.net/helm/f8be45f71a8c4cfda3e3ce5355865ea4/25) _hayachan
 
-## ![osalu_JOJ](https://minotar.net/helm/64eb5161171d45958414418df6bb5a35/25) るるるじょじ
+MCID: `_hayachan`
 
-ジェイオージェイ
+## ![fuari](https://minotar.net/helm/c2f67ab0546148b880106ac480753383/25) fuari
 
-MCID: `osalu_JOJ`
+MCID: `fuari`
+
+## ![wakadiru](https://minotar.net/helm/27b9cbc6dcf4440c8262e0bd7261e321/25) wakadiru
+
+MCID: `wakadiru`
+
+## ![gakusei_gizagiza](https://minotar.net/helm/1fa73990b41946cbbcf0a7f1fe2696f8/25) gakusei_gizagiza
+
+MCID: `gakusei_gizagiza`
+
+## ![koikingu_gyarado](https://minotar.net/helm/58c9daf589c14497a3cd3f7e746ed259/25) koikingu_gyarado
+
+MCID: `koikingu_gyarado`
