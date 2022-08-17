@@ -12,7 +12,7 @@ MCID: `Marvelous_Akio`
 
 MCID: `Pa1umu`
 
-## ![_dangomushi_](https://minotar.net/helm/8c05a324800c4c8f94bb56aeb89f4517/25) _dangomushi_
+## ![_dangomushi_](https://minotar.net/helm/8c05a324800c4c8f94bb56aeb89f4517/25) \_dangomushi\_
 
 MCID: `_dangomushi_`
 
