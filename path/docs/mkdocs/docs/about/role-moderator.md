@@ -11,3 +11,7 @@ MCID: `Shimada_Kazuko`
 ## ![_hayachan](https://minotar.net/helm/f8be45f71a8c4cfda3e3ce5355865ea4/25) はやて
 
 MCID: `_hayachan`
+
+## ![wakadiru](https://minotar.net/helm/27b9cbc6dcf4440c8262e0bd7261e321/25) わかぢる
+
+MCID: `wakadiru`
