@@ -12,6 +12,6 @@ MCID: `Shimada_Kazuko`
 
 MCID: `_hayachan`
 
-## ![wakadiru](https://minotar.net/helm/27b9cbc6dcf4440c8262e0bd7261e321/25) わかぢる
+## ![gakusei_gizagiza](https://minotar.net/helm/1fa73990b41946cbbcf0a7f1fe2696f8/25) ぎざぎざ
 
-MCID: `wakadiru`
+MCID: `gakusei_gizagiza`

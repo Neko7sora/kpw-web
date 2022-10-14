@@ -12,10 +12,6 @@ MCID: `Marvelous_Akio`
 
 MCID: `Pa1umu`
 
-## ![_dangomushi_](https://minotar.net/helm/8c05a324800c4c8f94bb56aeb89f4517/25) だんごむし
-
-MCID: `_dangomushi_`
-
 ## ![Ojihan](https://minotar.net/helm/10c499e305ea46028f195261d785e0b6/25) おじはん
 
 MCID: `Ojihan`
@@ -31,10 +27,6 @@ MCID: `_hayachan`
 ## ![fuari](https://minotar.net/helm/c2f67ab0546148b880106ac480753383/25) ふあり
 
 MCID: `fuari`
-
-## ![wakadiru](https://minotar.net/helm/27b9cbc6dcf4440c8262e0bd7261e321/25) わかぢる
-
-MCID: `wakadiru`
 
 ## ![gakusei_gizagiza](https://minotar.net/helm/1fa73990b41946cbbcf0a7f1fe2696f8/25) ぎざぎざ
 

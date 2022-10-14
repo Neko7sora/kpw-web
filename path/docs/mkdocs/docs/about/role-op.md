@@ -81,3 +81,7 @@ MCID: `_solt`
 ## ![Quarri6343](https://minotar.net/helm/12892f299eef47edb8fbdf3e0e90db0c/25) くぁーりぃ
 
 MCID: `Quarri6343`
+
+## ![wakadiru](https://minotar.net/helm/27b9cbc6dcf4440c8262e0bd7261e321/25) わかぢる
+
+MCID: `wakadiru`
