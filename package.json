@@ -20,6 +20,6 @@
   },
   "devDependencies": {
     "gulp": "^4.0.2",
-    "html-minifier-terser": "^6.1.0"
+    "html-minifier-terser": "^7.0.0"
   }
 }
