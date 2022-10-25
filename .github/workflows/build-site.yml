@@ -38,6 +38,9 @@ jobs:
         with:
           python-version: 3.x
 
+      - name: Set up Material for MkDocs social cards
+        run: sudo apt-get install libcairo2-dev libfreetype6-dev libffi-dev libjpeg-dev libpng-dev libz-dev
+
       - name: Enable corepack
         run: corepack enable pnpm
 

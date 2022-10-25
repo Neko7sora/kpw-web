@@ -1,5 +1,7 @@
 site_name: かめぱわぁ～るどドキュメント
 site_url: https://kamesuta.com/docs/
+site_description: >-
+  ようこそ！かめぱわぁ～るどのパブリックドキュメントへ
 theme:
   name: material
   custom_dir: overrides
@@ -28,6 +30,10 @@ theme:
     - search.suggest
     - search.highlight
     - search.share
+
+plugins:
+  - social:
+      cards_font: Noto Sans JP
 
 extra:
   social:

@@ -1,5 +1,5 @@
 {
   "scripts": {
-    "postinstall": "pip install mkdocs-material"
+    "postinstall": "pip install pillow cairosvg mkdocs-material"
   }
 }
