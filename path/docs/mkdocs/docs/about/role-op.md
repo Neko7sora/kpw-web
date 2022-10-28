@@ -72,12 +72,6 @@ MCID: `MoriMori_0317_jp`
 
 MCID: `Neko7sora`
 
-## ![_solt](https://minotar.net/helm/0e18b3ee3ce140efbfb65185ee223491/25) そると
-
-わー！
-
-MCID: `_solt`
-
 ## ![Quarri6343](https://minotar.net/helm/12892f299eef47edb8fbdf3e0e90db0c/25) くぁーりぃ
 
 MCID: `Quarri6343`
