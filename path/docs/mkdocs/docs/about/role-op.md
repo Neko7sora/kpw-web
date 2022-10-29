@@ -6,7 +6,7 @@
 
 ## ![Jumala9163](https://minotar.net/helm/6322c0e8bf3c4b6396b02c57aef00dce/25) どんかー
 
-よしこ鯖もやってた
+サーバー管理してるからそっち系の人かと思いきや音響の専門行ってる人です　　やぁ
 
 MCID: `Jumala9163`
 
@@ -31,7 +31,7 @@ MCID: `toms0910`
 
 ## ![kei__55](https://minotar.net/helm/6e729daabbec42f0acd21b63976c07cd/25) けい
 
-口が悪いかめぱわぁ～るど鯖管理者
+かめぱ組サーバー管理部管理課総統括責任者兼かめぱ組管理部トラブル課トラブル総統括理事長
 
 MCID: `kei__55`
 
@@ -46,12 +46,6 @@ MCID: `TB_ricoil`
 オープンソースプロジェクトへのコントリビュートをするのが好きです。
 
 MCID: `murayu0225`
-
-## ![yuu_111](https://minotar.net/helm/60e08e7139c44cb9ba5daa3ab523cfbf/25) ゆう
-
-あくたんのこと好きすぎ ☆
-
-MCID: `yuu_111`
 
 ## ![Away_From_K8S](https://minotar.net/helm/c6a7cfc4089e4570aacbf18f694abfb0/25) やっほー
 
@@ -77,5 +71,7 @@ MCID: `Neko7sora`
 MCID: `Quarri6343`
 
 ## ![wakadiru](https://minotar.net/helm/27b9cbc6dcf4440c8262e0bd7261e321/25) わかぢる
+
+マイクラ建築したり動画作ったりアセコルしたり
 
 MCID: `wakadiru`
