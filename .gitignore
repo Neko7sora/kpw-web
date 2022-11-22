@@ -8,3 +8,8 @@
 
 ._*
 Thumbs.db
+
+.turbo
+
+node_modules
+.pnpm-store
