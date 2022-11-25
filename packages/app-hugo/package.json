@@ -1,0 +1,16 @@
+{
+  "name": "app-hugo",
+  "description": "Install the required environment for hugo.",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install": "shx rm -rf dist && hugo-installer --version otherDependencies.hugo --extended --destination dist/hugo && shx mv dist/hugo/hugo* ../../node_modules/.bin"
+  },
+  "dependencies": {
+    "hugo-installer": "^4.0.1",
+    "shx": "^0.3.4"
+  },
+  "otherDependencies": {
+    "hugo": "0.107.0"
+  }
+}
