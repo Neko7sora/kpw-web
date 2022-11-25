@@ -30,10 +30,15 @@ theme:
     - search.suggest
     - search.highlight
     - search.share
+    - toc.follow
 
 plugins:
   - social:
       cards_font: Noto Sans JP
+  - search:
+      lang:
+        - ja
+        - en
 
 extra:
   social:
@@ -52,7 +57,7 @@ copyright: Copyright (c) 2022 かめぱわぁ～るど
 repo_name: www.kamesuta.com
 repo_url: https://github.com/KamePowerWorld/www.kamesuta.com
 
-edit_uri: edit/develop/packages/app-hugo/package.json
+edit_uri: edit/v1.1/apps/mkdocs/docs
 
 markdown_extensions:
   - meta
