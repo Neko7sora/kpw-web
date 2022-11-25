@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "install": "shx rm -rf dist && hugo-installer --version otherDependencies.hugo --extended --destination dist/hugo && shx mv dist/hugo/hugo* ../../node_modules/.bin"
+    "install": "shx rm -rf dist && hugo-installer --version otherDependencies.hugo --extended --destination dist/hugo && shx mv dist/hugo/hugo* ./../../node_modules/.bin"
   },
   "dependencies": {
     "hugo-installer": "^4.0.1",
