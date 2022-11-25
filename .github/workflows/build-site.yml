@@ -10,14 +10,14 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - develop
+      - v1.1
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
 env:
-  BRANCH_TO_DEPLOY: "develop"
+  BRANCH_TO_DEPLOY: "v1.1"
 
 jobs:
   build:
