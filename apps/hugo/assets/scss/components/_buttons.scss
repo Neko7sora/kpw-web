@@ -1,0 +1,28 @@
+.aboutbutton a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 400px;
+  padding: 1em 2em;
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+  background-color: #21c75b;
+  transition: 0.3s;
+}
+
+.aboutbutton a::after {
+  width: 5px;
+  height: 5px;
+  content: "";
+  border-top: 3px solid #333;
+  border-right: 3px solid #333;
+  transform: rotate(45deg);
+}
+
+.aboutbutton a:hover {
+  width: 500px;
+  text-decoration: none;
+  background-color: #a3e0b8;
+}

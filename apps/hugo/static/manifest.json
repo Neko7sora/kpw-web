@@ -1,0 +1,20 @@
+{
+  "name": "かめぱわぁ～るど",
+  "short_name": "かめぱわぁ～るど",
+  "start_url": "https://www.kamesuta.com/",
+  "icons": [
+    {
+      "src": "img/192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "img/512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#144314",
+  "background_color": "#144314",
+  "display": "standalone"
+}

@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="{{ .Site.LanguageCode | default "en" }}">
+  {{ partial "head/head.html" . }}
+  {{- partial "head/body-class.html" . -}}
+  <body class="{{ delimit (.Scratch.Get "class") " " }}" style="--startDeg: 0deg; border: 4px solid hsl(100 100% 60%); border-image-slice: 1; border-image-source: conic-gradient( from var(--startDeg, 0deg), #ffe580, #ff7571, #ea5dad, #c2a0fd, #3bf0e4, #b2f4b6,#ffe580 );">
+    {{ partial "header/header.html" . }}
+    <div class="wrap container" role="document">
+      <div class="content">
+        {{ block "main" . }}{{ end }}
+      </div>
+    </div>
+    {{ block "sidebar-footer" . }}{{ end }}
+    {{ partial "footer/footer.html" . }}
+    {{ partial "footer/script-footer.html" . }}
+  </body>
+</html>

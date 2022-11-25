@@ -1,0 +1,22 @@
+
+<div class="justify-content-center">
+  <div class="col-lg-12 pb-5 text-center">
+    <iframe src="https://discord.com/widget?id=930083398691733565&theme=dark" width="600" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"  style="max-width: 50vw;min-height: 50vh;" loading="lazy"></iframe>
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    {{ $data := getJSON "package.json" }}
+    <p
+      class="m-0 text-center"{{ with .GitInfo }}
+      title="Page Commit: {{ .Hash }}
+      Desc: {{ .Subject }}
+      Author: {{ .AuthorName }}
+      Date: {{ .AuthorDate }}
+      Repo: {{ $data.repository }}"
+      {{ end }}
+    >
+      {{ $.Site.Params.footer | safeHTML }}
+    </p>
+  </div>
+</footer>

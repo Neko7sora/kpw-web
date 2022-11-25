@@ -1,0 +1,47 @@
+.header-bar {
+  border-top: 4px solid;
+  border-image-source: linear-gradient(-70deg, #9867f0, #ed4e50);
+  border-image-source:
+    linear-gradient(
+      270.97deg,
+      #ffe580 -21.36%,
+      #ff7571 -2.45%,
+      #ea5dad 26.84%,
+      #c2a0fd 64.15%,
+      #3bf0e4 108.29%,
+      #b2f4b6 159.03%
+    );
+  border-image-slice: 1;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(165deg, #f7f5fb 50%, #fff 50%);
+}
+
+blockquote {
+  position: relative;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  font-style: italic;
+  color: #464646;
+  background: #f3f3f3;
+  border-left: solid 10px #c4c4c4;
+}
+
+blockquote p {
+  position: relative;
+  z-index: 3;
+  padding: 0;
+  margin: 10px 0;
+  line-height: 1.7;
+}
+
+blockquote cite {
+  display: block;
+  font-size: 0.9em;
+  color: #888;
+  text-align: right;
+}

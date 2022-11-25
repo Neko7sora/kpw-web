@@ -1,0 +1,48 @@
+{
+  "name": "website-root",
+  "description": "KamePowerWorld Website",
+  "version": "1.0.0",
+  "private": true,
+  "browserslist": [
+    "defaults",
+    "not IE 11",
+    "not op_mini all",
+    "maintained node versions",
+    "not dead"
+  ],
+  "scripts": {
+    "dev": "hugo server --bind=localhost --disableFastRender --baseURL=http://localhost",
+    "check": "pnpm run check:scripts && pnpm run check:styles && pnpm run check:markdown",
+    "check:scripts": "eslint config",
+    "check:styles": "stylelint \"assets/scss/**/*.{css,sass,scss}\"",
+    "check:markdown": "markdownlint-cli2 \"**/*.md\"",
+    "fix": "pnpm run fix:styles && pnpm run fix:markdown",
+    "fix:styles": "stylelint --fix \"assets/scss/**/*.{css,sass,scss,sss,less}\"",
+    "fix:markdown": "markdownlint-cli2-fix \"*.md\" \"content/**/*.md\"",
+    "test": "pnpm run check",
+    "build": "hugo --gc --trace=./../../public/root",
+    "clean": "pnpm run clean:build && pnpm run clean:install",
+    "clean:build": "shx rm -rf public resources .hugo_build.lock",
+    "clean:install": "shx rm -rf package-lock.json yarn.lock pnpm-lock.yaml node_modules"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.19.6",
+    "@babel/preset-env": "^7.19.4",
+    "@fullhuman/postcss-purgecss": "^5.0.0",
+    "@popperjs/core": "^2.11.6",
+    "@pwabuilder/pwaupdate": "0.2.1",
+    "autoprefixer": "^10.4.12",
+    "bootstrap": "^5.2.2",
+    "eslint": "^8.26.0",
+    "markdownlint-cli2": "^0.5.1",
+    "postcss": "^8.4.18",
+    "postcss-cli": "^10.0.0",
+    "purgecss-whitelister": "^2.4.0",
+    "quicklink": "^2.3.0",
+    "shx": "^0.3.4",
+    "stylelint": "^14.14.0",
+    "stylelint-config-recess-order": "^3.0.0",
+    "stylelint-config-standard-scss": "^6.0.0"
+  }
+}
