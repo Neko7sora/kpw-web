@@ -9,6 +9,11 @@
   },
   "packageManager": "pnpm@7.17.0",
   "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "fix": "turbo run fix",
+    "install": "turbo run install",
+    "minify": "turbo run minify"
   },
   "devDependencies": {
     "turbo": "^1.6.3"
