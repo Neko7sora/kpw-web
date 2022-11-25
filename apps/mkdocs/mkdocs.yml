@@ -1,0 +1,76 @@
+site_name: かめぱわぁ～るどドキュメント
+site_url: https://kamesuta.com/docs/
+site_description: >-
+  ようこそ！かめぱわぁ～るどのパブリックドキュメントへ
+theme:
+  name: material
+  custom_dir: overrides
+  language: ja
+  icon:
+    logo: material/order-alphabetical-descending
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+      primary: teal
+    - scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+      primary: teal
+  font:
+    text: BIZ UDPGothic
+    code: BIZ UDGothic
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.expand
+    - search.suggest
+    - search.highlight
+    - search.share
+
+plugins:
+  - social:
+      cards_font: Noto Sans JP
+
+extra:
+  social:
+    - icon: fontawesome/solid/house-chimney
+      link: https://www.kamesuta.com
+      name: かめぱわぁ～るど Webサイト
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/kamepower
+      name: かめぱわぁ～るど Discord
+    - icon: fontawesome/brands/github
+      link: https://github.com/KamePowerWorld
+      name: かめぱわぁ～るど GitHub
+
+copyright: Copyright (c) 2022 かめぱわぁ～るど
+
+repo_name: www.kamesuta.com
+repo_url: https://github.com/KamePowerWorld/www.kamesuta.com
+
+edit_uri: edit/develop/packages/app-hugo/package.json
+
+markdown_extensions:
+  - meta
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - tables
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+extra_javascript:
+  - extra/index.js
+
+extra_css:
+  - extra/index.css
