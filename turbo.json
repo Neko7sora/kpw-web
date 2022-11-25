@@ -9,7 +9,7 @@
     "fix": {
       "dependsOn": ["check"]
     },
-    "install": {},
+    "install:next": {},
     "minify": {}
   }
 }

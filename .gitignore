@@ -20,6 +20,8 @@ dist
 
 extra
 
+!.gitkeep
+
 public
 resources
 .hugo_build.lock

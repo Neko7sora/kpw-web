@@ -29,29 +29,35 @@ jobs:
       - name: Check out project
         uses: actions/checkout@v3
 
-      - name: Set up Node.js 16.x
+      - uses: pnpm/action-setup@v2.0.1
+        with:
+          version: latest
+
+      - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 18.x
+          cache: 'pnpm'
 
-      - uses: actions/setup-python@v3
+      - name: Set up Python
+        uses: actions/setup-python@v3
         with:
           python-version: 3.x
 
       - name: Set up Material for MkDocs social cards
         run: sudo apt-get install libcairo2-dev libfreetype6-dev libffi-dev libjpeg-dev libpng-dev libz-dev
 
-      - name: Enable corepack
-        run: corepack enable pnpm
+      - name: Install dependencies
+        run: pnpm install
 
       - name: Install dependencies
-        run: pnpm i
+        run: pnpm run install:next
 
       - name: Build website
         run: pnpm run build
 
       - name: minify
-        run: pnpm minify
+        run: pnpm run minify
 
       - name: Brotli compress the html, css and js files
         uses: KamePowerWorld/brotli-action@master

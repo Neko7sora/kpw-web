@@ -4,6 +4,6 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "install": "pip install pillow cairosvg mkdocs-material"
+    "install:next": "pip install pillow cairosvg mkdocs-material"
   }
 }

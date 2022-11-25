@@ -12,7 +12,7 @@
     "build": "turbo run build",
     "dev": "turbo run dev",
     "fix": "turbo run fix",
-    "install": "turbo run install",
+    "install:next": "turbo run install:next",
     "minify": "turbo run minify"
   },
   "devDependencies": {

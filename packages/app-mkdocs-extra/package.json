@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Generate mkdocs extra code and insert files.",
   "scripts": {
-    "install": "esbuild index.js --bundle --outfile=./../../../../apps/mkdocs/docs/extra/extra.js --format=esm --target=es2021 --minify && pnpm shx cp index.css ./../../apps/mkdocs/docs/extra/index.css"
+    "install:next": "esbuild index.js --bundle --outfile=./../../apps/mkdocs/docs/extra/extra.js --format=esm --target=es2021 --minify && pnpm shx cp index.css ./../../apps/mkdocs/docs/extra/index.css"
   },
   "dependencies": {
     "esbuild": "^0.14.54",
