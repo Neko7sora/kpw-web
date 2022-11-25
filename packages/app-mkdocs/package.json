@@ -1,0 +1,9 @@
+{
+  "name": "app-mkdocs",
+  "description": "Install the required environment for mkdocs.",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install": "pip install pillow cairosvg mkdocs-material"
+  }
+}
