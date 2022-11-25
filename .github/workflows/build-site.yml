@@ -1,0 +1,86 @@
+name: "Site-build-and-deployment"
+
+permissions:
+  contents: read
+  pages: write
+  deployments: write
+  id-token: write
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - develop
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  BRANCH_TO_DEPLOY: "develop"
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+    environment:
+      name: production
+
+    steps:
+      - name: Check out project
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js 16.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+
+      - uses: actions/setup-python@v3
+        with:
+          python-version: 3.x
+
+      - name: Set up Material for MkDocs social cards
+        run: sudo apt-get install libcairo2-dev libfreetype6-dev libffi-dev libjpeg-dev libpng-dev libz-dev
+
+      - name: Enable corepack
+        run: corepack enable pnpm
+
+      - name: Install dependencies
+        run: pnpm i
+
+      - name: Build website
+        run: pnpm run build
+
+      - name: minify
+        run: pnpm minify
+
+      - name: Brotli compress the html, css and js files
+        uses: KamePowerWorld/brotli-action@master
+        with:
+          target-directory: "public"
+
+      - name: Archive build output
+        run: tar --dereference --hard-dereference --directory public/ -cvf artifact.tar .
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: github-pages
+          path: ./artifact.tar
+          if-no-files-found: warn
+
+  deploy:
+    needs: build
+    permissions:
+      contents: "read"
+      pages: "write"
+      id-token: "write"
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/deploy-pages@v1
+        id: deployment
+        name: Deploy to GitHub Pages
