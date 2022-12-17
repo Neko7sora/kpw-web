@@ -1,10 +1,10 @@
 ---
-title: ✨ Season Re:2
+title: ✨ Re:2 サバイバル生活がより便利に！
 search:
   boost: 2
 ---
 
-Season Re:2
+Life Season Re:2
 
 # サバイバル生活がより便利に！
 
