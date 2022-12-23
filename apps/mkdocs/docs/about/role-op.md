@@ -75,3 +75,7 @@ MCID: `Quarri6343`
 マイクラ建築したり動画作ったりアセコルしたり
 
 MCID: `wakadiru`
+
+## ![HotaruLiaHarts](https://minotar.net/helm/53ec00f9c031406fb06a53f91ff00452/25) さいらす
+
+MCID: `HotaruLiaHarts`
