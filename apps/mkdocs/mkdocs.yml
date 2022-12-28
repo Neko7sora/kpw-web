@@ -7,7 +7,7 @@ theme:
   custom_dir: overrides
   language: ja
   icon:
-    logo: material/order-alphabetical-descending
+    logo: material/book-open-variant
   palette:
     - scheme: default
       toggle:
@@ -26,11 +26,12 @@ theme:
     - navigation.instant
     - navigation.tracking
     - navigation.tabs
-    - navigation.expand
+    - navigation.sections
     - search.suggest
     - search.highlight
     - search.share
     - toc.follow
+    - toc.integrate
 
 plugins:
   - social:
@@ -51,8 +52,9 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/KamePowerWorld
       name: かめぱわぁ～るど GitHub
+  generator: false
 
-copyright: Copyright (c) 2022 かめぱわぁ～るど
+copyright: '"Minecraft" is a trademark of Mojang Synergies AB<br>© かめぱわぁ～るど / Made with Material for MkDocs'
 
 repo_name: www.kamesuta.com
 repo_url: https://github.com/KamePowerWorld/www.kamesuta.com

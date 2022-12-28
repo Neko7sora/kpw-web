@@ -1,13 +1,4 @@
-.md-main {
-  min-height: 75vh;
-}
-
-.md-social__link svg {
-  max-height: 1.2rem;
-  vertical-align: 0;
-}
-
-.md-social__link {
-  width: 2.4rem;
-  height: 2.4rem;
+/* タッチパッドでの操作により不具合が発生するため */
+html{
+  overscroll-behavior: none;
 }
