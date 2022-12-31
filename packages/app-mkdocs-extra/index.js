@@ -1,4 +1,4 @@
-import Tablesort from 'tablesort/dist/tablesort.min.js';
+import Tablesort from 'tablesort/src/tablesort.js';
 import quicklink from 'quicklink/dist/quicklink.js';
 
 document$.subscribe(function () {
@@ -9,5 +9,7 @@ document$.subscribe(function () {
 });
 
 window.addEventListener('load', () => {
-  quicklink.listen();
+  quicklink.listen({
+  limit: 30
+  });
 });

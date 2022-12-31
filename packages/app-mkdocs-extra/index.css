@@ -2,3 +2,7 @@
 html{
   overscroll-behavior: none;
 }
+
+.md-main {
+min-height: 80vh;
+}

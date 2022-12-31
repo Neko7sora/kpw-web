@@ -6,7 +6,7 @@
     "install:next": "esbuild index.js --bundle --outfile=./../../apps/mkdocs/docs/extra/index.js --format=esm --target=es2021 --minify && pnpm shx cp index.css ./../../apps/mkdocs/docs/extra/index.css"
   },
   "dependencies": {
-    "esbuild": "^0.14.54",
+    "esbuild": "^0.16.12",
     "quicklink": "^2.3.0",
     "tablesort": "^5.3.0",
     "shx": "^0.3.4"
