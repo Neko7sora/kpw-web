@@ -2,7 +2,7 @@
 
 !!! Info
 
-    「かめぱわぁ～るど」の Discord サーバーでモデレータ権限を持っているプレイヤー
+    「かめぱわぁ～るど」の Discord サーバーで一般ユーザーのBANを行う権限などを持ちます。
 
 ## ![Shimada_Kazuko](https://minotar.net/helm/6741666a6f4f4a278f8b2577ef7fef5a/25) しま
 

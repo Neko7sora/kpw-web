@@ -2,7 +2,9 @@
 
 !!! Info
 
-    「かめぱわぁ～るど」のマイクラサーバーで OP 権限を持っているプレイヤー
+    「かめぱわぁ～るど」のサーバーの管理者です。
+
+    Minecraft サーバーの企画や設定を行う運営と、Minecraft を動かすサーバーの調整を行う鯖管理者と、プラグインや Web ページなどを制作する開発の 3 班に分かれています
 
 ## ![Jumala9163](https://minotar.net/helm/6322c0e8bf3c4b6396b02c57aef00dce/25) どんかー
 
@@ -17,23 +19,11 @@ SERVG は気分的な組織
 
 MCID: `MuGuKuN`
 
-## ![Honon](https://minotar.net/helm/28c58c7f43914db5bc8c16cdb748c33c/25) ほのん
-
-I'm Japanese XD
-
-MCID: `Honon`
-
 ## ![toms0910](https://minotar.net/helm/03b050c8d6374fa0bffd9ff5e668fbc4/25) とむ
 
 ネットワーク関連担当 プラグイン関係もやってるよ！
 
 MCID: `toms0910`
-
-## ![kei__55](https://minotar.net/helm/6e729daabbec42f0acd21b63976c07cd/25) けい
-
-かめぱ組サーバー管理部管理課総統括責任者兼かめぱ組管理部トラブル課トラブル総統括理事長
-
-MCID: `kei__55`
 
 ## ![TB_ricoil](https://minotar.net/helm/2531f370893b49788eb8ba63c75d2c15/25) こいる
 
