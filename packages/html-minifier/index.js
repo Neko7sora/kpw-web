@@ -1,5 +1,20 @@
 const { src, dest } = require("gulp");
 const { minify } = require("html-minifier-terser");
+const yargs = require("yargs");
+
+const argv = yargs
+  .option("src", {
+    alias: "s",
+    describe: "HTML file path to be compressed",
+    type: "string",
+    demandOption: true,
+  })
+  .option("dest", {
+    alias: "d",
+    describe: "Output directory for the compressed HTML file",
+    type: "string",
+    demandOption: true,
+  }).argv;
 
 const options = {
   collapseWhitespace: true,
@@ -11,8 +26,8 @@ const options = {
   removeStyleLinkTypeAttributes: true,
 };
 
-function html() {
-  return src("./../../public/**/**.html")
+function html(srcGlob, destPath) {
+  return src(srcGlob)
     .on("data", async function (file) {
       console.log(file.path);
       const buferFile = Buffer.from(
@@ -20,6 +35,7 @@ function html() {
       );
       return (file.contents = buferFile);
     })
-    .pipe(dest("./../../public"));
+    .pipe(dest(destPath));
 }
-html();
+
+html(argv.src, argv.dest);

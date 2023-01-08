@@ -4,10 +4,11 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "minify": "node index.js"
+    "minify": "node index.js --src=./../../public/**/**.html --dest=./../../public"
   },
   "devDependencies": {
     "gulp": "^4.0.2",
-    "html-minifier-terser": "^7.1.0"
+    "html-minifier-terser": "^7.1.0",
+    "yargs": "^17.6.2"
   }
 }

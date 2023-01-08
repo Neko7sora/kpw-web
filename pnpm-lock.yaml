@@ -81,9 +81,11 @@ importers:
     specifiers:
       gulp: ^4.0.2
       html-minifier-terser: ^7.1.0
+      yargs: ^17.6.2
     devDependencies:
       gulp: 4.0.2
       html-minifier-terser: 7.1.0
+      yargs: 17.6.2
 
 packages:
 
