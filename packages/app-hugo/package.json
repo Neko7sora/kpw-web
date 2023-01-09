@@ -4,7 +4,10 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "install:next": "shx rm -rf dist && hugo-installer --version otherDependencies.hugo --extended --destination dist/hugo && shx mv dist/hugo/hugo* ./../../node_modules/.bin"
+    "install:next": "shx rm -rf dist && hugo-installer --version otherDependencies.hugo --extended --destination dist/hugo && shx mv dist/hugo/hugo* ./../../node_modules/.bin",
+    "clean": "pnpm run clean:build && pnpm run clean:install",
+    "clean:build": "shx rm -rf dist ../../../node_modules/.bin/hugo*",
+    "clean:install": "shx rm -rf node_modules"
   },
   "dependencies": {
     "shx": "^0.3.4",

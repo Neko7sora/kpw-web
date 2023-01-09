@@ -2,14 +2,37 @@
   "$schema": "https://turbo.build/schema.json",
   "pipeline": {
     "build": {
-      "outputs": ["public/**"]
+      "cache": true,
+      "dependsOn": ["^build"],
+      "outputs": ["public/**"],
+      "inputs": [
+        "apps/hugo/**",
+        "apps/mkdocs/**",
+        "packages/app-hugo/**",
+        "packages/app-mkdocs*/**"
+      ]
+    },
+    "build:minify": {
+      "cache": true,
+      "dependsOn": ["^build:minify"],
+      "outputs": ["public/**"],
+      "inputs": ["packages/html-minifier/**", "public/**"]
     },
     "check": {},
-    "dev": {},
+    "clean:build": {
+      "inputs": ["packages/**", "apps/**"]
+    },
+    "clean:install": {
+      "inputs": ["packages/**", "apps/**"]
+    },
+    "dev": {
+      "inputs": ["packages/**", "apps/**"]
+    },
     "fix": {
       "dependsOn": ["check"]
     },
-    "install:next": {},
-    "minify": {}
+    "install:next": {
+      "cache": true
+    }
   }
 }

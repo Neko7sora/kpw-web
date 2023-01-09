@@ -23,7 +23,7 @@
     "build": "hugo --gc --trace=./../../public/root",
     "clean": "pnpm run clean:build && pnpm run clean:install",
     "clean:build": "shx rm -rf public resources .hugo_build.lock",
-    "clean:install": "shx rm -rf package-lock.json yarn.lock pnpm-lock.yaml node_modules"
+    "clean:install": "shx rm -rf node_modules"
   },
   "devDependencies": {
     "@babel/cli": "^7.19.3",

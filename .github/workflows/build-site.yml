@@ -57,7 +57,7 @@ jobs:
         run: pnpm run build
 
       - name: minify
-        run: pnpm run minify
+        run: pnpm run build:minify
 
       - name: Brotli compress the html, css and js files
         uses: KamePowerWorld/brotli-action@master

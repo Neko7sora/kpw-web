@@ -7,15 +7,18 @@
     "node": ">=18",
     "pnpm": ">=7"
   },
-  "packageManager": "pnpm@7.17.0",
   "scripts": {
     "build": "turbo run build",
+    "build:minify": "turbo run build && turbo run build:minify",
+    "clean:build": "turbo run clean:build",
+    "clean:install": "turbo run clean:install",
+    "clean:turbo": "shx rm -rf pnpm-lock.yaml node_modules",
     "dev": "turbo run dev",
     "fix": "turbo run fix",
-    "install:next": "turbo run install:next",
-    "minify": "turbo run minify"
+    "install:next": "turbo run install:next"
   },
   "devDependencies": {
-    "turbo": "^1.6.3"
+    "turbo": "^1.6.3",
+    "shx": "^0.3.4"
   }
 }

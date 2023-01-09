@@ -4,8 +4,10 @@ importers:
 
   .:
     specifiers:
+      shx: ^0.3.4
       turbo: ^1.6.3
     devDependencies:
+      shx: 0.3.4
       turbo: 1.6.3
 
   apps/hugo:
@@ -81,10 +83,12 @@ importers:
     specifiers:
       gulp: ^4.0.2
       html-minifier-terser: ^7.1.0
+      shx: ^0.3.4
       yargs: ^17.6.2
     devDependencies:
       gulp: 4.0.2
       html-minifier-terser: 7.1.0
+      shx: 0.3.4
       yargs: 17.6.2
 
 packages:

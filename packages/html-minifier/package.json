@@ -4,11 +4,15 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "minify": "node index.js --src=./../../public/**/**.html --dest=./../../public"
+    "build:minify": "node index.js --src=./../../public/**/**.html --dest=./../../public",
+    "clean": "pnpm run clean:build && pnpm run clean:install",
+    "clean:build": "shx rm -rf ./../../public/**",
+    "clean:install": "shx rm -rf node_modules"
   },
   "devDependencies": {
     "gulp": "^4.0.2",
     "html-minifier-terser": "^7.1.0",
-    "yargs": "^17.6.2"
+    "yargs": "^17.6.2",
+    "shx": "^0.3.4"
   }
 }
