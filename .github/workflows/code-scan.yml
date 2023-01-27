@@ -1,0 +1,168 @@
+name: code scan
+
+on:
+  push:
+    branches: ["v1.1"]
+  pull_request:
+    branches: ["v1.1"]
+  schedule:
+    - cron: "45 9 10 * 5"
+
+permissions:
+  contents: read
+
+jobs:
+  codeql:
+    name: Analyze
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+
+    strategy:
+      fail-fast: false
+      matrix:
+        language: ["javascript"]
+        # CodeQL supports [ 'cpp', 'csharp', 'go', 'java', 'javascript', 'python', 'ruby' ]
+        # Use only 'java' to analyze code written in Java, Kotlin or both
+        # Use only 'javascript' to analyze code written in JavaScript, TypeScript or both
+        # Learn more about CodeQL language support at https://aka.ms/codeql-docs/language-support
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Initializes the CodeQL tools for scanning.
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v2
+        with:
+          languages: ${{ matrix.language }}
+          # If you wish to specify custom queries, you can do so here or in a config file.
+          # By default, queries listed here will override any specified in a config file.
+          # Prefix the list here with "+" to use these queries and those in the config file.
+
+          # Details on CodeQL's query packs refer to : https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/configuring-code-scanning#using-queries-in-ql-packs
+          # queries: security-extended,security-and-quality
+
+      # Autobuild attempts to build any compiled languages  (C/C++, C#, Go, or Java).
+      # If this step fails, then you should remove it and run the build manually (see below)
+      - name: Autobuild
+        uses: github/codeql-action/autobuild@v2
+
+      # ℹ️ Command-line programs to run using the OS shell.
+      # 📚 See https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepsrun
+
+      #   If the Autobuild fails above, remove it and uncomment the following three lines.
+      #   modify them (or add more) to build your code if your project, please refer to the EXAMPLE below for guidance.
+
+      # - run: |
+      #     echo "Run, Build Application using script"
+      #     ./location_of_script_within_repo/buildscript.sh
+
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@v2
+        with:
+          category: "/language:${{matrix.language}}"
+
+  ossf:
+    name: Scorecard analysis
+    runs-on: ubuntu-latest
+    permissions:
+      # Needed to upload the results to code-scanning dashboard.
+      security-events: write
+      # Needed to publish results and get a badge (see publish_results below).
+      id-token: write
+      # Uncomment the permissions below if installing in a private repository.
+      # contents: read
+      # actions: read
+
+    steps:
+      - name: "Checkout code"
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+
+      - name: "Run analysis"
+        uses: ossf/scorecard-action@2
+        with:
+          results_file: results.sarif
+          results_format: sarif
+          # (Optional) "write" PAT token. Uncomment the `repo_token` line below if:
+          # - you want to enable the Branch-Protection check on a *public* repository, or
+          # - you are installing Scorecard on a *private* repository
+          # To create the PAT, follow the steps in https://github.com/ossf/scorecard-action#authentication-with-pat.
+          repo_token: ${{ secrets.SCORECARD_TOKEN }}
+
+          # Public repositories:
+          #   - Publish results to OpenSSF REST API for easy access by consumers
+          #   - Allows the repository to include the Scorecard badge.
+          #   - See https://github.com/ossf/scorecard-action#publishing-results.
+          # For private repositories:
+          #   - `publish_results` will always be set to `false`, regardless
+          #     of the value entered here.
+          publish_results: true
+
+      # Upload the results to GitHub's code scanning dashboard.
+      - name: "Upload to code-scanning"
+        uses: github/codeql-action/upload-sarif@2
+        with:
+          sarif_file: results.sarif
+
+  osv:
+    permissions:
+      contents: "read"
+    runs-on: "ubuntu-latest"
+    steps:
+      - uses: actions/checkout@v3
+      - uses: google/osv-scanner@main
+        with:
+          to-scan: "./"
+
+  snyk:
+    permissions:
+      contents: read # for actions/checkout to fetch code
+      security-events: write # for github/codeql-action/upload-sarif to upload SARIF results
+      actions: read # only required for a private repository by github/codeql-action/upload-sarif to get the Action run status
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run Snyk to check configuration files for security issues
+        # Snyk can be used to break the build when it detects security issues.
+        # In this case we want to upload the issues to GitHub Code Scanning
+        continue-on-error: true
+        uses: snyk/actions/node@master
+        env:
+          # In order to use the Snyk Action you will need to have a Snyk API token.
+          # More details in https://github.com/snyk/actions#getting-your-snyk-token
+          # or you can signup for free at https://snyk.io/login
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+        with:
+          # Add the path to the configuration file that you would like to test.
+          # For example `deployment.yaml` for a Kubernetes deployment manifest
+          # or `main.tf` for a Terraform configuration file
+          file: your-file-to-test.yaml
+      - name: Upload result to GitHub Code Scanning
+        uses: github/codeql-action/upload-sarif@v2
+        with:
+          sarif_file: snyk.sarif
+
+  njsscan:
+    permissions:
+      contents: read # for actions/checkout to fetch code
+      security-events: write # for github/codeql-action/upload-sarif to upload SARIF results
+      actions: read # only required for a private repository by github/codeql-action/upload-sarif to get the Action run status
+    runs-on: ubuntu-latest
+    name: njsscan code scanning
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v3
+      - name: nodejsscan scan
+        id: njsscan
+        uses: ajinabraham/njsscan-action@7
+        with:
+          args: ". --sarif --output results.sarif || true"
+      - name: Upload njsscan report
+        uses: github/codeql-action/upload-sarif@v2
+        with:
+          sarif_file: results.sarif
