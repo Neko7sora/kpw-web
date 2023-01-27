@@ -84,7 +84,7 @@ jobs:
           persist-credentials: false
 
       - name: "Run analysis"
-        uses: ossf/scorecard-action@v2
+        uses: ossf/scorecard-action@dc2954d367f36c46e692df566d6c9df04b8423a7
         with:
           results_file: results.sarif
           results_format: sarif
@@ -118,7 +118,6 @@ jobs:
       - uses: google/osv-scanner@main
         with:
           version: "v1.1.0"
-          to-scan: "./"
 
   snyk:
     permissions:
