@@ -109,16 +109,6 @@ jobs:
         with:
           sarif_file: results.sarif
 
-  osv:
-    permissions:
-      contents: "read"
-    runs-on: "ubuntu-latest"
-    steps:
-      - uses: actions/checkout@ac593985615ec2ede58e132d2e21d2b1cbd6127c # v3.3.0
-      - uses: google/osv-scanner@e569787b37455a4c55ca02829efd2f25734a5894 # main
-        with:
-          version: v1.1.0
-
   snyk:
     permissions:
       contents: read # for actions/checkout to fetch code
