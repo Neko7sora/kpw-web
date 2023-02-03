@@ -1,4 +1,4 @@
-# HolographicDisplays
+# HolographicDisplays (HD)
 
 モダンなホログラムを作成します。
 
@@ -10,76 +10,86 @@
 
 プラグインのメインコマンド、`/hologram` の短いエイリアス。それに関する情報、バージョン、および開発者を表示します。
 
-### hd help
+### /hd help
 
 プラグインのメインコマンドを表示し、コマンドにカーソルを合わせると、それぞれのヘルプが表示されます。
 
-### hd create [hologramName] [text]
+### /hd create <hologramName\> [text]
 
 現在地に指定された名前の新しいホログラムを作成します。この名前は、他のコマンドで使用されます。オプション: デフォルト行を置き換えるテキストを追加します。
 
-### hd delete [hologram]
+### /hd delete <hologram\>
 
 ホログラムを削除します。
 
-### hd list [page]
+### /hd list [page]
 
 既存のすべてのホログラムとその場所を一覧表示します。
 
-### hd near [radius]
+### /hd near <radius\>
 
 指定した半径内のすべての近接ホログラムを一覧表示します。
 
-### hd teleport [hologram]
+### /hd teleport <hologram\>
 
 ホログラムにテレポートします。
 
-### hd align [x|y|z|xz] [hologramToAlign] [referenceHologram]
+### /hd align <x|y|z|xz\> <hologramToAlign\> <referenceHologram>
 
 指定された軸で、最初のホログラムを 2 番目のホログラムに整列させます。例えば、`y` は 2 つのホログラムを垂直方向に揃え、同じ高さに移動させ、`xz` は水平方向に揃え、同じ x/z 位置に移動させます。
 
-### hd movehere [hologram]
+### /hd movehere <hologram\>
 
 ホログラムを足の位置に移動します。
 
-### hd edit [hologram]
+### /hd edit <hologram\>
 
 既存のホログラムを変更するために使用可能なすべてのコマンドを一覧表示します。
 
-### hd addline [hologram] [text]
+### /hd addline <hologram\> <text>
 
 ホログラムにテキスト行を追加します。
 
-### hd removeline [hologram] [number]
+### /hd removeline <hologram\> <number\>
 
 [number]行を削除します。
 
-### hd setline [hologram] [number] [newText]
+### /hd setline <hologram\> <number\> <newText\>
 
 [number] 行を削除します。
 
-### hd insertline [hologram] [number] [text]
+### /hd insertline <hologram\> <number\> <text\>
 
 [number] 行の後に行を挿入します。番号が 0 の場合、行は先頭に挿入されます。
 
-### hd info [hologram]
+### /hd info <hologram\>
 
 ホログラムの内容を行番号付きで表示します。
 
-### hd copy [fromHologram] [toHologram]
+### /hd copy <fromHologram\> <toHologram>
 
 最初のホログラムの内容を 2 番目のホログラムにコピーします。コマンドを実行した後、それらは同一になります。
 
-### hd readtext [hologram] [fileWithExtension]
+### /hd readtext <hologram\> <fileWithExtension>
 
 テキスト ファイルから行を読み取ります。ファイル (`logo.txt` など) を作成し、プラグインのフォルダーに配置します。新しいホログラム (`test` など) を作成し、`/hd readtext test logo.txt` を実行して、テキスト ファイルをホログラムに貼り付けます。
 
-### hd readimage [hologram] [imageWithExtension] [width]
+### /hd readimage <hologram\> <imageWithExtension\> <width>
 
 プラグインのフォルダまたは URL（パスが `http://` で始まる場合）から、指定された幅の画像を読み込みます（自動的にリサイズされます、最大幅は 150 ピクセルです）。使用されるシンボルは、設定から取得されます。透明な背景もサポートしており、スペースとして使用する文字列を設定から選択できます。
 
 フラグ `-a` を使用すると、ホログラムの内容を置き換える代わりに、画像を最後に追加します。
 
-### hd reload
+### /hd reload
 
 構成ファイルと保存されたホログラムを再読み込みします。
+
+## Permissions
+
+- holographicdisplays.command.<subCommand\>
+  <br>
+  Each subcommand has an individual permission depending on its name. For example, the command `/hd list` requires the permission holographicdisplays.list. The main command `/hd` is accessible by everyone.
+
+- holographicdisplays.update
+  <br>
+  Receive update notifications on join if enabled in the configuration.

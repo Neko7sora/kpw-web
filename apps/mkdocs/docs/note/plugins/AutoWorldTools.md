@@ -1,4 +1,4 @@
-# AutoWorldTools
+# AutoWorldTools (AWT)
 
 ワールドリセットやバックアップを行います。
 
@@ -33,3 +33,39 @@ Config をリロードします。
 ### /awt help
 
 コマンドガイドを表示します。
+
+## Permissions
+
+- autoWorldTools.admin
+  <br>
+  手動リセット・バックアップ・Config のリロードを行えます。
+  <br>
+  You can perform manual reset, backup, and reload of Config.
+
+- autoWorldTools.reset
+  <br>
+  手動リセットを行えます。
+  <br>
+  You can perform a manual reset.
+
+- autoWorldTools.backup
+  <br>
+  手動バックアップを行えます。
+  <br>
+  You can perform a manual backup.
+
+- autoWorldTools.resetInfo
+  <br>
+  リセット時刻情報を表示出来ます。
+  <br>
+  The reset time information can be displayed.
+
+- autoWorldTools.backupInfo
+  <br>
+  バックアップ時刻情報を表示出来ます。
+  <br>
+  You can display the backup time information.
+  <br>
+  サーバー再起動時刻情報を表示出来ます。
+  <br>
+  You can display the server restart time information.

@@ -1,4 +1,4 @@
-# FastChunkPregenerator
+# FastChunkPregenerator (FCP)
 
 チャンクをバックグラウンドでゆっくりと生成し、パフォーマンスへの影響を最小限に抑えます。
 
@@ -33,3 +33,9 @@
 ### /fcp pending
 
 すべてのタスクに関する情報を一覧表示します。
+
+## Permissions
+
+- fcp.commands
+  <br>
+  All commands are restricted with the permission

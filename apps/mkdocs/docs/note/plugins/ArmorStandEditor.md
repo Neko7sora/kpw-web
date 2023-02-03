@@ -1,4 +1,4 @@
-# ArmorStandEditor
+# ArmorStandEditor (ASEdit)
 
 防具立て(アーマースタンド)のデータをコマンドレスで編集できます。
 
@@ -18,3 +18,33 @@
 - 粗調整は体の部分をすばやく回転させ、微調整は位置が近づいたら微調整することができます。
 - アーマースタンドの設定をコピーすると、ツールは自動的に貼り付けモードに切り替わります
 - 他のアーマースタンドが邪魔になっていませんか?アイテム切り替えキー(デフォルトは `F`)を押して、特定のアーマースタンドをターゲットにします。
+
+## Permissions
+
+- asedit.basic
+  <br>
+  Allow use armorstand edit functions. If set to false it will override all other functions.
+
+- asedit.armorstand.invisible
+  <br>
+  Toggles ArmorStand visibility.
+
+- asedit.itemframe.invisible
+  <br>
+  Allows setting of ItemFrame Visibility
+
+- asedit.rename
+  <br>
+  Rename armorstands - Now Supports Color
+
+- asedit.equipment
+  <br>
+  Access armorstand equipment GUI
+
+- asedit.disableslots
+  <br>
+  Allows locking and unlocking the contents of an ArmorStand. When locked, armor and equipement can not be added or removed without unlocking it first.
+
+- asedit.update
+  <br>
+  Allows the checking for updates.

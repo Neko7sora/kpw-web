@@ -13,3 +13,13 @@
 ### /actionhealth toggle
 
 表示/非表示を切り替えます。
+
+## Permissions
+
+- ActionHealth.Reload
+  <br>
+  Reloads config.
+
+- ActionHealth.Health
+  <br>
+  This will send the player the health message only if 'Use Permission' is enabled in the config.

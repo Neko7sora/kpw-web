@@ -4,7 +4,7 @@
 
 ## コマンド
 
-### /image create [image name|url] [scale percent]
+### /image create <image name|url\> [scale percent]
 
 新しいカスタム画像を作成して貼り付けを開始します。
 
@@ -27,3 +27,12 @@
 ### /image transfer
 
 新しいデータベースへの画像の転送します。
+
+## Permissions
+
+- images.command.create
+- images.command.delete
+- images.command.delete.near
+- images.command.list
+- images.command.import
+- images.command.transfer
