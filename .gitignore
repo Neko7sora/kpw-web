@@ -25,3 +25,5 @@ extra
 public
 resources
 .hugo_build.lock
+
+apps/hugo-tailwild/assets/css/style.css

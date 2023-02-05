@@ -1,0 +1,15 @@
+<header class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white text-sm py-4 dark:bg-gray-800 opacity-90">
+  <nav class="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between" aria-label="Global">
+    {{ $image := resources.GetRemote "https://cdn.discordapp.com/attachments/931590427302330399/965171656869941318/kamepawa2.gif" }}
+    {{ $image := $image.Resize "40x webp q100" }}
+    <a class="inline-flex items-center gap-x-2 text-xl font-semibold dark:text-gray-100" href="/">
+      <img class="w-10 h-auto" src="{{ $image.RelPermalink }}" alt="Logo">
+      {{ .Site.Params.titleAddition }}
+    </a>
+    <div class="flex flex-row items-center gap-5 mt-5 pb-2 overflow-x-auto sm:justify-end sm:mt-0 sm:pl-5 sm:pb-0 sm:overflow-x-visible">
+      {{ range .Site.Menus.main }}
+      <a class="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-300 dark:hover:text-gray-500 inline-flex items-center gap-2" href="{{ .URL }}" aria-label="{{ .URL }}">{{- .Name | safeHTML -}}</a>
+      {{ end }}
+    </div>
+  </nav>
+</header>

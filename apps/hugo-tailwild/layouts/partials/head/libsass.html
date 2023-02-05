@@ -1,0 +1,14 @@
+{{ $styles := resources.Get "/css/style.css" }}
+{{ if .Site.IsServer }}
+<link
+  rel="stylesheet"
+  href="{{ $styles.RelPermalink }}"
+  crossorigin="anonymous"
+/>
+{{ else }} {{ $styles := $styles | minify }}
+<link
+  rel="stylesheet"
+  href="{{ $styles.RelPermalink }}"
+  crossorigin="anonymous"
+/>
+{{ end }}
