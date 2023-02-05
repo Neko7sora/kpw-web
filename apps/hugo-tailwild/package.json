@@ -15,7 +15,7 @@
     "fix:styles": "stylelint --fix \"assets/scss/**/*.{css,sass,scss,sss,less}\"",
     "fix:markdown": "markdownlint-cli2-fix \"*.md\" \"content/**/*.md\"",
     "test": "pnpm run check",
-    "build": "run-s build:*",
+    "build": "pnpm run build:css && pnpm run build:hugo",
     "build:hugo": "hugo --gc --trace=./../../public/root",
     "build:css": "npx tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css -m",
     "clean": "pnpm run clean:build && pnpm run clean:install",

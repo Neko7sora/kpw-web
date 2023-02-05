@@ -8,8 +8,8 @@
     "pnpm": ">=7"
   },
   "scripts": {
-    "build": "turbo run build",
-    "build:minify": "turbo run build && turbo run build:minify",
+    "build": "turbo run build --filter=website-root-tailwild --filter=website-docs",
+    "build:minify": "turbo run build --filter=website-root-tailwild --filter=website-docs && turbo run build:minify",
     "clean:build": "turbo run clean:build",
     "clean:install": "turbo run clean:install",
     "clean:turbo": "shx rm -rf pnpm-lock.yaml node_modules",
@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "shx": "^0.3.4",
-    "turbo": "^1.6.3"
+    "turbo": "^1.7.3"
   },
   "pnpm": {
     "overrides": {
