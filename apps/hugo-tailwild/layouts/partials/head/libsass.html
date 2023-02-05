@@ -1,5 +1,4 @@
-{{ $styles := resources.Get "/css/style.css" }}
-{{ if .Site.IsServer }}
+{{ $styles := resources.Get "/css/style.css" }} {{ if .Site.IsServer }}
 <link
   rel="stylesheet"
   href="{{ $styles.RelPermalink }}"
