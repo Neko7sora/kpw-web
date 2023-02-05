@@ -17,6 +17,15 @@
 - `apps\hugo\static\favicon-32x32.png`
 - `apps\hugo\static\favicon.ico`
 -
+- `apps\hugo-tailwild\static\img\192x192.png`
+- `apps\hugo-tailwild\static\img\512x512.png`
+- `apps\hugo-tailwild\static\android-chrome-192x192.png`
+- `apps\hugo-tailwild\static\android-chrome-512x512.png`
+- `apps\hugo-tailwild\static\apple-touch-icon.png`
+- `apps\hugo-tailwild\static\favicon-16x16.png`
+- `apps\hugo-tailwild\static\favicon-32x32.png`
+- `apps\hugo-tailwild\static\favicon.ico`
+-
 - `apps\mkdocs\docs\minecraft\life\v1\01.webp`
 - `apps\mkdocs\docs\minecraft\life\v1\02.webp`
 - `apps\mkdocs\docs\minecraft\life\v1\03.webp`
