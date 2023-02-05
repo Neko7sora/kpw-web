@@ -29,9 +29,7 @@
     "dev": {
       "inputs": ["packages/**", "apps/**"]
     },
-    "fix": {
-      "dependsOn": ["check"]
-    },
+    "fix": {},
     "install:next": {
       "cache": true
     }

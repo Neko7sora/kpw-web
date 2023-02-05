@@ -1,0 +1,16 @@
+**/.git
+**/.svn
+**/.hg
+**/node_modules
+*.log
+*.png
+*.jpg
+*.ico
+*.xml
+assets/css/style.css
+**/public
+**/resources
+**/.hugo*
+*.toml
+**/.turbo
+pnpm-lock.yaml
