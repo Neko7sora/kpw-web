@@ -12,7 +12,7 @@
     "fix": "run-s fix:*",
     "fix:prettier": "pnpm prettier --write .",
     "test": "pnpm run check",
-    "build": "run-s build:*",
+    "build": "run-s build:css build:hugo",
     "build:hugo": "hugo --gc --trace=./../../public/root",
     "build:css": "pnpx tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css -m",
     "clean": "run-s clean:*",
