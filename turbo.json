@@ -2,7 +2,6 @@
   "$schema": "https://turbo.build/schema.json",
   "pipeline": {
     "build": {
-      "cache": true,
       "dependsOn": ["^build"],
       "outputs": ["public/**"],
       "inputs": [
@@ -14,7 +13,6 @@
       ]
     },
     "build:minify": {
-      "cache": true,
       "dependsOn": ["^build:minify"],
       "outputs": ["public/**"],
       "inputs": ["packages/html-minifier/**", "public/**"]
@@ -24,6 +22,9 @@
       "inputs": ["packages/**", "apps/**"]
     },
     "clean:install": {
+      "inputs": ["packages/**", "apps/**"]
+    },
+    "clean:turbo": {
       "inputs": ["packages/**", "apps/**"]
     },
     "dev": {
