@@ -1,16 +1,28 @@
-<!doctype html>
-<html lang="{{ .Site.LanguageCode | default "en" }}">
-  {{ partial "head/head.html" . }}
-  {{- partial "head/body-class.html" . -}}
-  <body class="bg-gray-50 dark:bg-gray-900" style="--startDeg:0deg;border:4px solid hsl(100 100% 60%);border-image-slice:1;border-image-source:conic-gradient(from var(--startDeg,0deg),#ffe68099,#ff757199,#ea5dad99,#c2a0fd99,#3bf0e499,#b2f4b996,#ffe58099);">
-    <div class="isolate min-h-screen min-w-full bg-liner">
-      {{ if .Site.Params.alert -}}
-{{ partial "header/alert.html" . }}
-{{ end -}}
-    {{ partial "header/header.html" . }}
-        {{ block "main" . }}{{ end }}
-    {{ block "sidebar-footer" . }}{{ end }}
-    {{ partial "footer/footer.html" . }}
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+  {{ partial "head/head.html" . }} {{- partial "head/body-class.html" . -}}
+  <body
+    class="bg-gray-50 dark:bg-gray-900"
+    style="
+      --startDeg: 0deg;
+      border: 4px solid hsl(100 100% 60%);
+      border-image-slice: 1;
+      border-image-source: conic-gradient(
+        from var(--startDeg, 0deg),
+        #ffe68099,
+        #ff757199,
+        #ea5dad99,
+        #c2a0fd99,
+        #3bf0e499,
+        #b2f4b996,
+        #ffe58099
+      );
+    "
+  >
+    <div class="bg-liner isolate min-h-screen min-w-full">
+      {{ if .Site.Params.alert -}} {{ partial "header/alert.html" . }} {{ end
+      -}} {{ partial "header/header.html" . }} {{ block "main" . }}{{ end }} {{
+      block "sidebar-footer" . }}{{ end }} {{ partial "footer/footer.html" . }}
     </div>
     {{ partial "footer/script-footer.html" . }}
   </body>
