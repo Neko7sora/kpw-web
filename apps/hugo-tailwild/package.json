@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "run-p dev:*",
     "dev:hugo": "hugo server --bind=localhost --disableFastRender --baseURL=http://localhost",
-    "dev:css": "pnpx tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css -w",
+    "dev:css": "tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css -w",
     "check": "run-s check:*",
     "check:prettier": "pnpm prettier --check .",
     "fix": "run-s fix:*",
@@ -14,7 +14,7 @@
     "test": "pnpm run check",
     "build": "run-s build:css build:hugo",
     "build:hugo": "hugo --gc --trace=./../../public/root",
-    "build:css": "pnpx tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css -m",
+    "build:css": "tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css -m",
     "clean": "run-s clean:*",
     "clean:build": "shx rm -rf public resources .hugo_build.lock",
     "clean:install": "shx rm -rf node_modules",
