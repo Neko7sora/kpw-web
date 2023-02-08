@@ -16,7 +16,7 @@
     "clean:install-monorepo": "shx rm -rf node_modules",
     "clean:turbo": "turbo run clean:turbo",
     "clean:turbo-monorepo": "shx rm -rf .turbo",
-    "dev": "turbo run dev  --filter=website-root-tailwild --filter=website-docs",
+    "dev": "turbo run dev  --filter=website-root-tailwild --filter=website-docs --filter=http-proxy",
     "fix": "turbo run fix  --filter=website-root-tailwild --filter=website-docs",
     "install:next": "turbo run install:next"
   },

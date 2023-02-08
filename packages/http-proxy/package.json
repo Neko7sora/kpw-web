@@ -1,0 +1,17 @@
+{
+  "name": "http-proxy",
+  "description": "Proxy your HTTP requests to another server, with hooks.",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "run-s dev:*",
+    "dev:proxy": "node index.js",
+    "clean": "run-s clean:*",
+    "clean:install": "shx rm -rf node_modules",
+    "clean:turbo": "shx rm -rf .turbo"
+  },
+  "devDependencies": {
+    "@fastify/http-proxy": "^8.4.0",
+    "fastify": "^4.12.0"
+  }
+}
