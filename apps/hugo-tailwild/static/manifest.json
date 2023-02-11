@@ -9,7 +9,9 @@
   "short_name": "KPW",
   "start_url": "/",
   "theme_color": "#144314",
-  "categories": ["utilities"],
+  "categories": [
+    "utilities"
+  ],
   "screenshots": [
     {
       "src": "/screenshot-desktop.jpg",
@@ -63,7 +65,16 @@
       "type": "image/x-icon"
     }
   ],
-  "shortcuts": [],
+  "shortcuts": [
+    {
+      "name": "Docs",
+      "url": "/docs",
+      "description": "ドキュメント"
+    }
+  ],
   "lang": "ja",
-  "display_override": []
+  "display_override": [],
+  "prefer_related_applications": false,
+  "iarc_rating_id": "07a94408-dbdd-45a1-aa64-3082988be626",
+  "related_applications": []
 }
