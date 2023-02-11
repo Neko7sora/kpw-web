@@ -1,0 +1,69 @@
+{
+  "background_color": "#ffffff",
+  "description": "かめぱわぁ～るどのWebサイト",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "かめぱわぁ～るど",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "KPW",
+  "start_url": "/",
+  "theme_color": "#144314",
+  "categories": ["utilities"],
+  "screenshots": [
+    {
+      "src": "/screenshot-desktop.jpg",
+      "sizes": "1280x800",
+      "type": "image/jpg"
+    },
+    {
+      "src": "/screenshot-mobile.jpg",
+      "sizes": "750x1334",
+      "type": "image/jpg"
+    }
+  ],
+  "icons": [
+    {
+      "src": "/16.png",
+      "type": "image/png",
+      "sizes": "16x16"
+    },
+    {
+      "src": "/32.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "/64.png",
+      "type": "image/png",
+      "sizes": "64x64"
+    },
+    {
+      "src": "/128.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "/256.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "/512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "/1024.png",
+      "type": "image/png",
+      "sizes": "1024"
+    },
+    {
+      "src": "/favicon.ico",
+      "type": "image/x-icon"
+    }
+  ],
+  "shortcuts": [],
+  "lang": "ja",
+  "display_override": []
+}

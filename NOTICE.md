@@ -17,14 +17,27 @@
 - `apps\hugo\static\favicon-32x32.png`
 - `apps\hugo\static\favicon.ico`
 -
-- `apps\hugo-tailwild\static\img\192x192.png`
-- `apps\hugo-tailwild\static\img\512x512.png`
-- `apps\hugo-tailwild\static\android-chrome-192x192.png`
-- `apps\hugo-tailwild\static\android-chrome-512x512.png`
-- `apps\hugo-tailwild\static\apple-touch-icon.png`
-- `apps\hugo-tailwild\static\favicon-16x16.png`
-- `apps\hugo-tailwild\static\favicon-32x32.png`
+- `apps\hugo-tailwild\static\16.png`
+- `apps\hugo-tailwild\static\20.png`
+- `apps\hugo-tailwild\static\24.png`
+- `apps\hugo-tailwild\static\30.png`
+- `apps\hugo-tailwild\static\32.png`
+- `apps\hugo-tailwild\static\36.png`
+- `apps\hugo-tailwild\static\40.png`
+- `apps\hugo-tailwild\static\44.png`
+- `apps\hugo-tailwild\static\48.png`
+- `apps\hugo-tailwild\static\60.png`
+- `apps\hugo-tailwild\static\64.png`
+- `apps\hugo-tailwild\static\72.png`
+- `apps\hugo-tailwild\static\80.png`
+- `apps\hugo-tailwild\static\96.png`
+- `apps\hugo-tailwild\static\180.png`
+- `apps\hugo-tailwild\static\256.png`
+- `apps\hugo-tailwild\static\512.png`
+- `apps\hugo-tailwild\static\1024.png`
 - `apps\hugo-tailwild\static\favicon.ico`
+- `apps\hugo-tailwild\static\screenshot-desktop.jpg`
+- `apps\hugo-tailwild\static\screenshot-mobile.jpg`
 -
 - `apps\mkdocs\docs\minecraft\life\v1\01.webp`
 - `apps\mkdocs\docs\minecraft\life\v1\02.webp`
