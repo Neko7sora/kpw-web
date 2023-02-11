@@ -5,18 +5,11 @@
   "private": true,
   "scripts": {
     "dev": "mkdocs serve",
-    "check": "pnpm run check:markdown",
-    "check:markdown": "markdownlint-cli2 \"**/*.md\"",
-    "fix": "pnpm run fix:markdown",
-    "fix:markdown": "markdownlint-cli2-fix \"*.md\" \"content/**/*.md\"",
-    "test": "pnpm run check",
     "build": "mkdocs build --site-dir ./../../public/docs",
     "clean": "run-s clean:*",
     "clean:build": "shx rm -rf .cache",
     "clean:install": "shx rm -rf node_modules",
     "clean:turbo": "shx rm -rf .turbo"
   },
-  "devDependencies": {
-    "markdownlint-cli2": "^0.5.1"
-  }
+  "devDependencies": {}
 }

@@ -7,10 +7,14 @@
 *.jpg
 *.ico
 *.xml
-assets/css/style.css
+apps/hugo-tailwild/assets/css/style.css
 **/public
 **/resources
 **/.hugo*
 *.toml
 **/.turbo
 pnpm-lock.yaml
+**/dist
+apps/mkdocs/docs/extra/index.js
+apps/mkdocs/docs/extra/index.css
+apps/hugo

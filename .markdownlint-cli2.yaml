@@ -1,0 +1,40 @@
+config:
+  default: true
+  single-title: false
+  line_length: false
+  no-inline-html: false
+  code-block-style: false
+  no-default-alt-text: true
+  no-generic-link-text:
+    additional_banned_texts:
+      - read more
+      - 続きを読む
+      - learn more
+      - もっと詳しく
+      - more
+      - 詳しく
+      - here
+      - こちら
+      - click here
+      - こちらをクリック
+      - ここをクリック
+      - クリック
+      - link
+      - リンク
+      - go here
+      - ここに行く
+      - download
+      - ダウンロード
+
+customRules:
+  - "@github/markdownlint-github"
+
+ignores:
+  - node_modules
+  - "**/node_modules"
+  - dist
+  - "**/dist"
+
+outputFormatters:
+  - - markdownlint-cli2-formatter-pretty
+    - appendLink: true
