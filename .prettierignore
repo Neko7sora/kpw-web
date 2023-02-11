@@ -18,3 +18,4 @@ pnpm-lock.yaml
 apps/mkdocs/docs/extra/index.js
 apps/mkdocs/docs/extra/index.css
 apps/hugo
+.github

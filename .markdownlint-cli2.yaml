@@ -34,6 +34,7 @@ ignores:
   - "**/node_modules"
   - dist
   - "**/dist"
+  - ".github/**"
 
 outputFormatters:
   - - markdownlint-cli2-formatter-pretty
