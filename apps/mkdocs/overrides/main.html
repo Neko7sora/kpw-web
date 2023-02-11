@@ -1,27 +1,40 @@
+<!--  prettier-ignore -->
 {% extends "base.html" %}
-
 {% block announce %}
 生活鯖シーズン Re:2 ｜ サバイバル生活がより便利に！好評だった生活鯖 Season2 を基にして、少し味付けを変えた生活鯖！
 {% endblock %}
-
 {% block footer %}
 <footer class="md-footer">
   <div class="md-footer-meta md-typeset">
-    <div class="md-footer-meta__inner md-grid" style="padding-top: 96px;padding-bottom: 64px;"
->
+    <div
+      class="md-footer-meta__inner md-grid"
+      style="padding-top: 96px; padding-bottom: 64px"
+    >
       <div>
         <p>[2022/6/26] かめすたさんの誕生日！</p>
-        <img alt="2022-06-26-birthday" src="{{ 'minecraft/plan/2022/06-26-birthday.webp' | url }}" loading="lazy" style="width: 28rem;">
-      </div><br>
+        <img
+          alt="2022-06-26-birthday"
+          src="{{ 'minecraft/plan/2022/06-26-birthday.webp' | url }}"
+          loading="lazy"
+          style="width: 28rem"
+        />
+      </div>
+      <br />
       <div>
-      <iframe src="https://discord.com/widget?id=930083398691733565&theme=dark" width="600" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" style="width: 28rem; min-height: 50vh;" loading="lazy"></iframe>
-    </div>
+        <iframe
+          src="https://discord.com/widget?id=930083398691733565&theme=dark"
+          width="600"
+          allowtransparency="true"
+          frameborder="0"
+          sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+          style="width: 28rem; min-height: 50vh"
+          loading="lazy"
+        ></iframe>
+      </div>
     </div>
     <div class="md-footer-meta__inner md-grid">
-      {% include "partials/copyright.html" %}
-      {% if config.extra.social %}
-        {% include "partials/social.html" %}
-      {% endif %}
+      {% include "partials/copyright.html" %} {% if config.extra.social %} {%
+      include "partials/social.html" %} {% endif %}
     </div>
   </div>
 </footer>

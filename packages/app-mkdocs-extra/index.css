@@ -1,5 +1,5 @@
 /* タッチパッドでの操作により不具合が発生するため */
-html{
+html {
   overscroll-behavior: none;
 }
 

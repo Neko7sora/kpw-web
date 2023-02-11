@@ -70,7 +70,7 @@ A: 最悪 BAN になる
 
 ・配信は許可、ただし概要欄に以下の文をコピペすること ↓
 
-```
+```text
 ■ かめぱわぁ～るどサーバーへの参加方法
 Discordに参加→ https://discord.gg/vyDsT6QKgU
 ```
