@@ -1,6 +1,6 @@
 {{ define "main" }}
 <div
-  class="col-lg-12 container mx-auto min-h-screen pb-5 text-center text-gray-800 dark:text-white"
+  class="container mx-auto min-h-screen pb-5 text-center text-gray-800 dark:text-white"
 >
   <p class="p-4">{{ .Params.Lead | safeHTML }}</p>
   {{ $movie := resources.GetRemote
@@ -25,7 +25,7 @@
       allowtransparency="true"
       frameborder="0"
       sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
-      class="w-full/2 h-10 object-cover"
+      class="h-10 object-cover"
       style="min-height: 40rem"
       loading="lazy"
     ></iframe>
