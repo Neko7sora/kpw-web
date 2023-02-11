@@ -80,20 +80,12 @@ importers:
   apps/hugo-tailwild:
     specifiers:
       '@tailwindcss/typography': ^0.5.9
-      postcss: ^8.4.19
-      prettier: ^2.8.3
-      prettier-plugin-css-order: ^1.3.0
-      prettier-plugin-tailwindcss: ^0.2.2
       quicklink: ^2.3.0
       tailwindcss: ^3.2.4
     devDependencies:
       '@tailwindcss/typography': 0.5.9_tailwindcss@3.2.4
-      postcss: 8.4.21
-      prettier: 2.8.3
-      prettier-plugin-css-order: 1.3.0_2mydsrxicfimatp4yj7qjmo36i
-      prettier-plugin-tailwindcss: 0.2.2_ron3yn7lwd626baveny4sqose4
       quicklink: 2.3.0
-      tailwindcss: 3.2.4_postcss@8.4.21
+      tailwindcss: 3.2.4
 
   apps/mkdocs:
     specifiers: {}
@@ -1709,7 +1701,7 @@ packages:
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       postcss-selector-parser: 6.0.10
-      tailwindcss: 3.2.4_postcss@8.4.21
+      tailwindcss: 3.2.4
     dev: true
 
   /@types/minimist/1.2.2:
@@ -6156,12 +6148,10 @@ packages:
     resolution: {integrity: sha512-WkfcZBHsp47gVH9CBHG0ZXopriG01IA87arGrchvIe868d4RiXVvoYPS1zMq9IdW05kBs5iGsqxTABqLyWonbg==}
     dev: false
 
-  /tailwindcss/3.2.4_postcss@8.4.21:
+  /tailwindcss/3.2.4:
     resolution: {integrity: sha512-AhwtHCKMtR71JgeYDaswmZXhPcW9iuI9Sp2LvZPo9upDZ7231ZJ7eA9RaURbhpXGVlrjX4cFNlB4ieTetEb7hQ==}
     engines: {node: '>=12.13.0'}
     hasBin: true
-    peerDependencies:
-      postcss: ^8.0.9
     dependencies:
       arg: 5.0.2
       chokidar: 3.5.3
