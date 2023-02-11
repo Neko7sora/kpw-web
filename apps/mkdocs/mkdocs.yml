@@ -8,6 +8,7 @@ theme:
   language: ja
   icon:
     logo: material/book-open-variant
+    edit: material/pencil
   palette:
     - scheme: default
       toggle:
@@ -20,8 +21,8 @@ theme:
         name: Switch to light mode
       primary: teal
   font:
-    text: BIZ UDPGothic
-    code: BIZ UDGothic
+    text: LINESeedJPStd
+    code: LINESeedJPStd
   features:
     - navigation.instant
     - navigation.tracking
@@ -32,6 +33,7 @@ theme:
     - search.share
     - toc.follow
     - toc.integrate
+    - content.action.edit
 
 plugins:
   - social:
@@ -57,10 +59,7 @@ extra:
 
 copyright: '"Minecraft" is a trademark of Mojang Synergies AB<br>© かめぱわぁ～るど / Made with Material for MkDocs'
 
-repo_name: www.kamesuta.com
-repo_url: https://github.com/KamePowerWorld/www.kamesuta.com
-
-edit_uri: edit/v1.1/apps/mkdocs/docs
+edit_uri: https://github.com/KamePowerWorld/www.kamesuta.com/edit/v1.1/apps/mkdocs/docs
 
 markdown_extensions:
   - meta
