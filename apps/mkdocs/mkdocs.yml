@@ -28,6 +28,7 @@ theme:
     - navigation.tracking
     - navigation.tabs
     - navigation.sections
+    - navigation.expand
     - search.suggest
     - search.highlight
     - search.share
@@ -62,6 +63,7 @@ copyright: '"Minecraft" is a trademark of Mojang Synergies AB<br>© かめぱわ
 edit_uri: https://github.com/KamePowerWorld/www.kamesuta.com/edit/v1.1/apps/mkdocs/docs
 
 markdown_extensions:
+  - attr_list
   - meta
   - admonition
   - pymdownx.details
