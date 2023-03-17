@@ -1,6 +1,6 @@
 INPO (=in no particular order/順不同)
 
-/* GitHub Contributors */
+/* KPW Website GitHub Contributors */
 
 	Name: ねこそら
 	Github: @Neko7sora
