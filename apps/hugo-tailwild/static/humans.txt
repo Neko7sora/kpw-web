@@ -29,10 +29,10 @@ INPO (=in no particular order/順不同)
 /* Material THANKS */
 
 	Name: かーくす
-  Material: meisai_nami, kamepaworld_logo
+	Material: meisai_nami, kamepaworld_logo
 
 	Name: ぐるぐる
-  Material: kamepaworld_burner
+	Material: kamepaworld_burner
 
 /* Web development THANKS */
 
@@ -84,6 +84,8 @@ INPO (=in no particular order/順不同)
 	Name: そると
 
 	Name: わかぢる
+
+	Name: むらゆー
 
 	Name: こいる
 
