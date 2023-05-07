@@ -8,10 +8,10 @@
 
 MCID: `Shimada_Kazuko`
 
-## <img alt="" src="https://minotar.net/helm/f8be45f71a8c4cfda3e3ce5355865ea4/38" style="vertical-align: top;"> はやて
-
-MCID: `_hayachan`
-
 ## <img alt="" src="https://minotar.net/helm/1fa73990b41946cbbcf0a7f1fe2696f8/38" style="vertical-align: top;"> ぎざぎざ
 
 MCID: `gakusei_gizagiza`
+
+## <img alt="" src="https://minotar.net/helm/f8be45f71a8c4cfda3e3ce5355865ea4/38" style="vertical-align: top;"> おすし
+
+MCID: `_succy`
