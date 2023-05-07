@@ -15,6 +15,6 @@
     "@neko7sora/hugo-installer": "^4.0.1-fork"
   },
   "otherDependencies": {
-    "hugo": "0.109.0"
+    "hugo": "0.111.3"
   }
 }
