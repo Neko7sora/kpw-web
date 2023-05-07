@@ -12,6 +12,6 @@ MCID: `Shimada_Kazuko`
 
 MCID: `gakusei_gizagiza`
 
-## <img alt="" src="https://minotar.net/helm/f8be45f71a8c4cfda3e3ce5355865ea4/38" style="vertical-align: top;"> おすし
+## <img alt="" src="https://minotar.net/helm/e2db5c8deeb2431fba6d720468863356/38" style="vertical-align: top;"> おすし
 
 MCID: `_succy`
