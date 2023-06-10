@@ -1,0 +1,12 @@
+.env
+.cache
+.log
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+._*
+Thumbs.db
+
+!.gitkeep

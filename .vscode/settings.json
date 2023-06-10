@@ -1,0 +1,21 @@
+{
+  "search.exclude": {
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.svn": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.svn": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true
+  },
+  "files.autoGuessEncoding": true,
+  "editor.renderControlCharacters": true,
+  "editor.renderWhitespace": "all"
+}
