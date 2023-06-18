@@ -4,6 +4,10 @@
 
     技術的な管理、マイクラ鯖の管理など
 
+## <img alt="" src="https://minotar.net/helm/e2db5c8deeb2431fba6d720468863356/38" style="vertical-align: top;"> おすし
+
+MCID: `_succy`
+
 ## <img alt="" src="https://minotar.net/helm/ac0aabfb0bc24992ab57e42c6479a626/38" style="vertical-align: top;"> くも
 
 MCID: `kumo_0621`
