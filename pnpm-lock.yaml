@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 overrides:
   glob-parent@<6.0.2: ^6.0.2
   decode-uri-component@<0.3.0: ^0.3.0
@@ -3778,7 +3782,3 @@ packages:
       y18n: 5.0.8
       yargs-parser: 21.1.1
     dev: true
-
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
