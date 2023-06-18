@@ -1,0 +1,52 @@
+{{ $data := getJSON "package.json" }}
+<footer
+  class="rounded-lg p-4 opacity-90 shadow md:p-6"
+  style="
+    background: linear-gradient(
+        65deg,
+        rgba(49, 51, 45, 0.901961) 4%,
+        rgba(211, 214, 207, 0.901961) 4%,
+        rgba(211, 214, 207, 0.8) 6%,
+        rgba(247, 245, 251, 0.2) 6%,
+        rgba(242, 245, 245, 0.2) 94%,
+        rgba(255, 99, 99, 0.8) 94%,
+        rgba(255, 99, 99, 0.8) 96%,
+        rgba(39, 174, 53, 0.8) 96%
+      ),
+      linear-gradient(
+        65deg,
+        rgba(211, 214, 207, 0.2) 0%,
+        rgba(247, 245, 251, 0.2) 100%
+      );
+  "
+>
+  <nav
+    class="mx-auto w-full max-w-[85rem] px-4 md:flex md:items-center md:justify-between"
+  >
+    <span
+      class="text-sm text-gray-800 dark:text-white sm:text-center"
+      {{
+      with
+      .GitInfo
+      }}
+      title="Page Commit: {{ .Hash }}
+  Desc: {{ .Subject }}
+  Author: {{ .AuthorName }}
+  Date: {{ .AuthorDate }}
+  Repo: {{ $data.repository }}"
+      {{
+      end
+      }}
+      >{{ $.Site.Params.footer | safeHTML }}
+    </span>
+    <ul
+      class="mt-3 flex flex-wrap items-center text-sm text-gray-800 dark:text-white sm:mt-0"
+    >
+      <li>
+        <a href="/docs/about" class="mr-4 hover:underline md:mr-6"
+          >かめぱわぁ～るどとはなんぞや???</a
+        >
+      </li>
+    </ul>
+  </nav>
+</footer>

@@ -1,0 +1,24 @@
+{
+  "name": "website-root-tailwild",
+  "description": "KamePowerWorld Website",
+  "version": "1.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "run-p dev:*",
+    "dev:hugo": "hugo server --bind=localhost --disableFastRender --baseURL=http://localhost",
+    "dev:css": "tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css -w",
+    "build": "run-s build:css build:hugo",
+    "build:hugo": "hugo --gc --trace=./../../public/root",
+    "build:css": "tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css -m",
+    "clean": "run-s clean:*",
+    "clean:build": "shx rm -rf public resources .hugo_build.lock",
+    "clean:install": "shx rm -rf node_modules",
+    "clean:turbo": "shx rm -rf .turbo"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.9",
+    "@pwabuilder/pwaupdate": "0.2.1",
+    "quicklink": "^2.3.0",
+    "tailwindcss": "^3.2.4"
+  }
+}

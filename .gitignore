@@ -9,4 +9,10 @@
 ._*
 Thumbs.db
 
+extra
+public
+
 !.gitkeep
+
+node_modules
+.turbo

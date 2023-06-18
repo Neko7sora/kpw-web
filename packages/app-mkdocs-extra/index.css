@@ -1,0 +1,60 @@
+@charset "UTF-8";
+/* タッチパッドでの操作により不具合が発生するため */
+html {
+  overscroll-behavior: none;
+}
+
+.md-main {
+  min-height: 80vh;
+}
+
+.md-header {
+  background-color: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  box-shadow: none;
+  transition: none;
+}
+
+.md-tabs {
+  background-color: var(--md-default-bg-color);
+}
+
+body {
+  --md-text-font-family: LINESeedJPStd, -apple-system, BlinkMacSystemFont,
+    Helvetica, Arial, sans-serif;
+  --md-code-font-family: LINESeedJPStd, SFMono-Regular, Consolas, Menlo,
+    monospace;
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 200;
+  src: local("※"), url(/fonts/LINESeedJP_OTF_Th.woff2) format("woff2");
+  font-family: LINESeedJPStd;
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  src: local("※"), url(/fonts/LINESeedJP_OTF_Rg.woff2) format("woff2");
+  font-family: LINESeedJPStd;
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  src: local("※"), url(/fonts/LINESeedJP_OTF_Bd.woff2) format("woff2");
+  font-family: LINESeedJPStd;
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 900;
+  src: local("※"), url(/fonts/LINESeedJP_OTF_Eb.woff2) format("woff2");
+  font-family: LINESeedJPStd;
+}
+
+.md-typeset h1,
+.md-typeset h2 {
+  font-weight: 400;
+}

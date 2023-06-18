@@ -1,0 +1,74 @@
+site_name: かめぱわぁ～るどドキュメント
+site_url: https://kamesuta.com/docs/
+site_description: >-
+  ようこそ！かめぱわぁ～るどのパブリックドキュメントへ
+theme:
+  name: material
+  language: ja
+  icon:
+    logo: material/book-open-variant
+    edit: material/pencil
+  palette:
+      scheme: slate
+      primary: teal
+  font:
+    text: LINESeedJPStd
+    code: LINESeedJPStd
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - search.suggest
+    - search.highlight
+    - search.share
+    - toc.follow
+    - toc.integrate
+    - content.action.edit
+
+plugins:
+  - search:
+      lang:
+        - ja
+        - en
+  - awesome-pages
+
+extra:
+  social:
+    - icon: fontawesome/solid/house-chimney
+      link: https://www.kamesuta.com
+      name: かめぱわぁ～るど Webサイト
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/kamepower
+      name: かめぱわぁ～るど Discord
+    - icon: fontawesome/brands/github
+      link: https://github.com/KamePowerWorld
+      name: かめぱわぁ～るど GitHub
+  generator: false
+
+copyright: '"Minecraft" is a trademark of Mojang Synergies AB<br>© かめぱわぁ～るど / Made with Material for MkDocs'
+
+edit_uri: https://github.com/KamePowerWorld/www.kamesuta.com/edit/v1.1/apps/mkdocs/docs
+
+markdown_extensions:
+  - attr_list
+  - meta
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - tables
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+extra_javascript:
+  - extra/index.js
+
+extra_css:
+  - extra/index.css

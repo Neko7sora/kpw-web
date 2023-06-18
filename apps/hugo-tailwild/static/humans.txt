@@ -1,0 +1,119 @@
+INPO (=in no particular order/順不同)
+
+/* KPW Website GitHub Contributors */
+
+	Name: ねこそら
+	Github: @Neko7sora
+
+	Name: だんごむし
+	Github: @Dangornushi
+
+	Name: とむ
+	Github: @shiro8613
+
+	Name: けい
+	Github: @kei-55
+
+	Name: ゆう
+	Github: @yuu1111
+
+	Name: どんかー
+	Github: @Donker_Jumala
+
+	Name: かめすた
+	Github: @Kamesuta
+
+	Name: MG
+	Github: @MultiGamer8853
+
+/* Material THANKS */
+
+	Name: かーくす
+	Material: meisai_nami, kamepaworld_logo
+
+	Name: ぐるぐる
+	Material: kamepaworld_burner
+
+/* Web development THANKS */
+
+	Name: りすりす
+	GitHub: @TwoSquirrels
+
+	Name: ぜくと
+	GitHub: @Zect3279
+
+	Name: すまいる
+	GitHub: @Smile-NS
+
+	Name: むらゆー
+	GitHub: @Murayu0225
+
+	Name: だだっこぱんだ
+	GitHub: @ddPn08
+
+	Name: しうまの
+	GitHub: @shiumano
+
+	Name: ほのん
+	GitHub: @tier940
+
+/* OP THANKS */
+
+	Name: かめすた
+
+	Name: けい
+
+	Name: ほのん
+
+	Name: とむ
+
+	Name: どんか－
+
+	Name: MG
+
+	Name: やっほー
+
+	Name: くぁーりぃ
+
+	Name: さいらす
+
+	Name: もりもり
+
+	Name: ねこそら
+
+	Name: そると
+
+	Name: わかぢる
+
+	Name: むらゆー
+
+	Name: こいる
+
+	Name: ゆう
+
+	Name: えるしゃ
+
+	Name: りんかめ
+
+/* Moderator THANKS */
+
+	Name: ぶん
+
+	Name: るーどろいど
+
+	Name: めが
+
+	Name: すまいる
+
+	Name: のねむ
+
+	Name: しま
+
+	Name: はやて
+
+	Name: ぎざぎざ
+
+	Name: おすし
+
+/* SITE */
+	humans.txt last update: 2023/03/17

@@ -1,0 +1,20 @@
+{
+  "name": "install-hugo",
+  "description": "Install the required environment for hugo.",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install:next": "shx rm -rf dist && hugo-installer --version otherDependencies.hugo --extended --destination dist/hugo && shx mv dist/hugo/hugo* ./../../node_modules/.bin",
+    "clean": "run-s clean:*",
+    "clean:build": "shx rm -rf dist ../../../node_modules/.bin/hugo*",
+    "clean:install": "shx rm -rf node_modules",
+    "clean:turbo": "shx rm -rf .turbo"
+  },
+  "dependencies": {
+    "shx": "^0.3.4",
+    "@neko7sora/hugo-installer": "^4.0.1-fork"
+  },
+  "otherDependencies": {
+    "hugo": "0.111.3"
+  }
+}

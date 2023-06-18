@@ -1,0 +1,36 @@
+{{ define "main" }}
+<div
+  class="container mx-auto min-h-screen pb-5 text-center text-gray-800 dark:text-white"
+>
+  <p class="p-4">{{ .Params.Lead | safeHTML }}</p>
+  {{ $movie := resources.GetRemote
+  "https://cdn.discordapp.com/attachments/934470551194447932/965925659513880596/kamepaworld2_2.mp4"
+  }}
+  <div class="flex justify-center">
+    <video
+      src="{{ $movie.RelPermalink }}"
+      class="aspect-video"
+      autoplay
+      muted
+      controls
+      loading="lazy"
+    ></video>
+  </div>
+  <br />
+  <br />
+  <div class="flex justify-center">
+    <iframe
+      src="https://discord.com/widget?id=930083398691733565&theme=dark"
+      width="600"
+      allowtransparency="true"
+      frameborder="0"
+      sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+      class="h-10 object-cover"
+      style="min-height: 40rem"
+      loading="lazy"
+    ></iframe>
+  </div>
+</div>
+{{ end }} {{ define "section" }}
+<section class="section container-fluid">{{- .Content -}}</section>
+{{ end }}

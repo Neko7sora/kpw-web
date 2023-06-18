@@ -1,0 +1,18 @@
+{
+  "name": "html-minifier",
+  "description": "Highly configurable, well-tested, JavaScript-based HTML minifier.",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build:minify": "node index.js --src=./../../public/**/**.html --dest=./../../public",
+    "clean": "run-s clean:*",
+    "clean:build": "shx rm -rf ./../../public/**",
+    "clean:install": "shx rm -rf node_modules",
+    "clean:turbo": "shx rm -rf .turbo"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "html-minifier-terser": "^7.1.0",
+    "yargs": "^17.6.2"
+  }
+}

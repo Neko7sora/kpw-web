@@ -1,0 +1,15 @@
+{
+  "name": "website-docs",
+  "description": "KamePowerWorld Website",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "mkdocs serve",
+    "build": "mkdocs build --site-dir ./../../public/docs",
+    "clean": "run-s clean:*",
+    "clean:build": "shx rm -rf .cache",
+    "clean:install": "shx rm -rf node_modules",
+    "clean:turbo": "shx rm -rf .turbo"
+  },
+  "devDependencies": {}
+}

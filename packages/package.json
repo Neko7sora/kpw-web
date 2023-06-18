@@ -1,0 +1,12 @@
+{
+  "name": "app-mkdocs",
+  "description": "Install the required environment for mkdocs.",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install:next": "pip install pillow cairosvg mkdocs-material mkdocs-awesome-pages-plugin --use-pep517",
+    "clean": "run-s clean:*",
+    "clean:install": "pip uninstall -y pillow cairosvg mkdocs-material mkdocs-awesome-pages-plugin",
+    "clean:turbo": "shx rm -rf .turbo"
+  }
+}

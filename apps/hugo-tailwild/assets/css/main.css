@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (prefers-color-scheme: light) {
+  .bg-liner {
+    --tw-bg-opacity: 1;
+    background: linear-gradient(
+      165deg,
+      rgb(247 245 251 / var(--tw-bg-opacity)) 50%,
+      rgba(255, 255, 255, 0) 50%
+    );
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .bg-liner {
+    --tw-bg-opacity: 1;
+    background: linear-gradient(
+      165deg,
+      rgb(31 41 55 / var(--tw-bg-opacity)) 50%,
+      rgba(255, 255, 255, 0) 50%
+    );
+  }
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 200;
+  src: local("※"), url(/fonts/LINESeedJP_OTF_Th.woff2) format("woff2");
+  font-family: LINESeedJPStd;
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  src: local("※"), url(/fonts/LINESeedJP_OTF_Rg.woff2) format("woff2");
+  font-family: LINESeedJPStd;
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  src: local("※"), url(/fonts/LINESeedJP_OTF_Bd.woff2) format("woff2");
+  font-family: LINESeedJPStd;
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 900;
+  src: local("※"), url(/fonts/LINESeedJP_OTF_Eb.woff2) format("woff2");
+  font-family: LINESeedJPStd;
+}
