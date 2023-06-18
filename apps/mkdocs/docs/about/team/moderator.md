@@ -1,8 +1,8 @@
-# モデレータ
+# モデレーター
 
 !!! Info
 
-    「かめぱわぁ～るど」の Discord サーバーで一般ユーザーのBANを行う権限などを持ちます。
+    Discord サーバーで一般ユーザーのBANを行う権限などを持ちます。
 
 ## <img alt="" src="https://minotar.net/helm/6741666a6f4f4a278f8b2577ef7fef5a/38" style="vertical-align: top;"> しま
 
