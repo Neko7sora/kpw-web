@@ -1,0 +1,46 @@
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /apps/hugo-tailwild
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /apps/mkdocs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/app-mkdocs-extra
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/html-minifier
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/install-hugo
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/install-mkdocs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages
+    schedule:
+      interval: daily
