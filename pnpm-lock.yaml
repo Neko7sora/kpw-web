@@ -1,9 +1,5 @@
 lockfileVersion: '6.0'
 
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
-
 overrides:
   glob-parent@<6.0.2: ^6.0.2
   decode-uri-component@<0.3.0: ^0.3.0
@@ -20,8 +16,8 @@ importers:
   .:
     devDependencies:
       '@github/markdownlint-github':
-        specifier: ^0.3.1
-        version: 0.3.1
+        specifier: ^0.4.1
+        version: 0.4.1
       markdownlint-cli2:
         specifier: ^0.5.1
         version: 0.5.1
@@ -302,8 +298,8 @@ packages:
     dev: false
     optional: true
 
-  /@github/markdownlint-github@0.3.1:
-    resolution: {integrity: sha512-nGNEIJW5cdSGSvT9Mg7vBc9WdL6cWxol5FaMHw7fqagYkgw2Xy0Gb0JsyKN/nj1gzUNiTv60XPJn32kHN7c0aQ==}
+  /@github/markdownlint-github@0.4.1:
+    resolution: {integrity: sha512-KbcDWoPRGzlc/VnvPjRD8AhhEFvpQxUbj2NqTPagdoXLVcCc0ecUXLDM3KctIFIuR3OWEQ/+jlDzdeIGb2qEtA==}
     dependencies:
       lodash: 4.17.21
     dev: true
@@ -3782,3 +3778,7 @@ packages:
       y18n: 5.0.8
       yargs-parser: 21.1.1
     dev: true
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
