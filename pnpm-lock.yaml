@@ -1,9 +1,5 @@
 lockfileVersion: '6.0'
 
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
-
 overrides:
   glob-parent@<6.0.2: ^6.0.2
   decode-uri-component@<0.3.0: ^0.3.0
@@ -26,8 +22,8 @@ importers:
         specifier: ^0.5.1
         version: 0.5.1
       markdownlint-cli2-formatter-pretty:
-        specifier: ^0.0.3
-        version: 0.0.3(markdownlint-cli2@0.5.1)
+        specifier: ^0.0.4
+        version: 0.0.4(markdownlint-cli2@0.5.1)
       npm-run-all:
         specifier: ^4.1.5
         version: 4.1.5
@@ -2198,8 +2194,9 @@ packages:
       markdownlint-cli2: 0.5.1
     dev: true
 
-  /markdownlint-cli2-formatter-pretty@0.0.3(markdownlint-cli2@0.5.1):
-    resolution: {integrity: sha512-J+j4TwP/up97N7eEwq3vhhs5GNWENLaBGZZU+H2XodshOl9eQD8BYHOUq/8mN9t0nz7jFj79jQCBMgJvHL9rKQ==}
+  /markdownlint-cli2-formatter-pretty@0.0.4(markdownlint-cli2@0.5.1):
+    resolution: {integrity: sha512-Zz903THP1PrmC6k4Rm8jBegVcbsCeVmMhH/XdFzd8bL2rS60dRVev7CXZqbdGBeiCcmdut0EFMPk3huAhztcuQ==}
+    engines: {node: '>=14.18.0'}
     peerDependencies:
       markdownlint-cli2: '>=0.0.4'
     dependencies:
@@ -3782,3 +3779,7 @@ packages:
       y18n: 5.0.8
       yargs-parser: 21.1.1
     dev: true
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
