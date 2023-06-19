@@ -13,6 +13,6 @@
   "devDependencies": {
     "gulp": "^4.0.2",
     "html-minifier-terser": "^7.2.0",
-    "yargs": "^17.6.2"
+    "yargs": "^17.7.2"
   }
 }

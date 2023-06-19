@@ -1,9 +1,5 @@
 lockfileVersion: '6.0'
 
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
-
 overrides:
   glob-parent@<6.0.2: ^6.0.2
   decode-uri-component@<0.3.0: ^0.3.0
@@ -88,8 +84,8 @@ importers:
         specifier: ^7.2.0
         version: 7.2.0
       yargs:
-        specifier: ^17.6.2
-        version: 17.6.2
+        specifier: ^17.7.2
+        version: 17.7.2
 
   packages/install-hugo:
     dependencies:
@@ -1602,7 +1598,7 @@ packages:
       replace-homedir: 1.0.0
       semver-greatest-satisfied-range: 1.1.0
       v8flags: 3.2.0
-      yargs: 17.6.2
+      yargs: 17.7.2
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -3770,8 +3766,8 @@ packages:
     engines: {node: '>=12'}
     dev: true
 
-  /yargs@17.6.2:
-    resolution: {integrity: sha512-1/9UrdHjDZc0eOU0HxOHoS78C69UD3JRMvzlJ7S79S2nTaWRA/whGCTV8o9e/N/1Va9YIV7Q4sOxD8VV4pCWOw==}
+  /yargs@17.7.2:
+    resolution: {integrity: sha512-7dSzzRQ++CKnNI/krKnYRV7JKKPUXMEh61soaHKg9mrWEhzFWhFnxPxGl+69cD1Ou63C13NUPCnmIcrvqCuM6w==}
     engines: {node: '>=12'}
     dependencies:
       cliui: 8.0.1
@@ -3782,3 +3778,7 @@ packages:
       y18n: 5.0.8
       yargs-parser: 21.1.1
     dev: true
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
