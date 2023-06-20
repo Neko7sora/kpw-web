@@ -10,7 +10,7 @@
     "clean:turbo": "shx rm -rf .turbo"
   },
   "dependencies": {
-    "esbuild": "^0.16.12",
+    "esbuild": "^0.18.5",
     "quicklink": "^2.3.0",
     "tablesort": "^5.3.0"
   }
