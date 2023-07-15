@@ -23,3 +23,7 @@ MCID: `kobyyyyyyyyy`
 ## <img alt="" src="https://minotar.net/helm/656a37f9b83343769e049d9fb10a1917/38" style="vertical-align: top;"> よっしー
 
 MCID: `yossy1588`
+
+## <img alt="" src="https://minotar.net/helm/60e08e7139c44cb9ba5daa3ab523cfbf/38" style="vertical-align: top;"> ゆう
+
+MCID: `yuu_111`
