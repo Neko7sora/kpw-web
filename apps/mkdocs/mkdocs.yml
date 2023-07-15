@@ -49,7 +49,7 @@ extra:
 
 copyright: '"Minecraft" is a trademark of Mojang Synergies AB<br>© かめぱわぁ～るど / Made with Material for MkDocs'
 
-edit_uri: https://github.com/KamePowerWorld/www.kamesuta.com/edit/v1.1/apps/mkdocs/docs
+edit_uri: https://github.com/KamePowerWorld/www.kamesuta.com/edit/v1.2/apps/mkdocs/docs
 
 markdown_extensions:
   - attr_list
