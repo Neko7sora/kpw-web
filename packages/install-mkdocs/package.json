@@ -4,9 +4,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "install:next": "pip install pillow cairosvg mkdocs-material mkdocs-awesome-pages-plugin --use-pep517",
+    "install:next": "node ../../scripts/python.mjs --setup -m pip install --upgrade -r requirements.txt --use-pep517",
     "clean": "run-s clean:*",
-    "clean:install": "pip uninstall -y pillow cairosvg mkdocs-material mkdocs-awesome-pages-plugin",
+    "clean:install": "node ../../scripts/python.mjs -m pip uninstall -y -r requirements.txt",
     "clean:turbo": "shx rm -rf .turbo"
   }
 }

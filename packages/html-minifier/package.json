@@ -8,11 +8,13 @@
     "clean": "run-s clean:*",
     "clean:build": "shx rm -rf ./../../public/**",
     "clean:install": "shx rm -rf node_modules",
-    "clean:turbo": "shx rm -rf .turbo"
+    "clean:turbo": "shx rm -rf .turbo",
+    "test": "node --test"
   },
   "devDependencies": {
-    "gulp": "^4.0.2",
+    "gulp": "^5.0.1",
     "html-minifier-terser": "^7.2.0",
-    "yargs": "^17.7.2"
-  }
+    "yargs": "^18.2.0"
+  },
+  "type": "module"
 }

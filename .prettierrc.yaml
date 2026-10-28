@@ -1,4 +1,9 @@
 plugins:
+  - prettier-plugin-go-template
   - prettier-plugin-css-order
   - prettier-plugin-tailwindcss
-pluginSearchDirs: false
+tailwindStylesheet: ./apps/hugo-tailwild/assets/css/main.css
+overrides:
+  - files: "apps/hugo-tailwild/layouts/**/*.html"
+    options:
+      parser: go-template

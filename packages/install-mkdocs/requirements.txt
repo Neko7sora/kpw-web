@@ -1,0 +1,5 @@
+Pillow==13.0.0
+CairoSVG==2.9.1
+mkdocs==1.6.1
+mkdocs-material==9.8.0
+mkdocs-awesome-pages-plugin==2.10.1

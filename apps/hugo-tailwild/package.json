@@ -8,7 +8,7 @@
     "dev:hugo": "hugo server --bind=localhost --disableFastRender --baseURL=http://localhost",
     "dev:css": "tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css -w",
     "build": "run-s build:css build:hugo",
-    "build:hugo": "hugo --gc --trace=./../../public/root",
+    "build:hugo": "hugo --gc",
     "build:css": "tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css -m",
     "clean": "run-s clean:*",
     "clean:build": "shx rm -rf public resources .hugo_build.lock",
@@ -16,9 +16,10 @@
     "clean:turbo": "shx rm -rf .turbo"
   },
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.9",
+    "@tailwindcss/typography": "^0.5.20",
     "@pwabuilder/pwaupdate": "0.2.1",
-    "quicklink": "^2.3.0",
-    "tailwindcss": "^3.2.4"
+    "quicklink": "^3.0.2",
+    "tailwindcss": "^4.3.3",
+    "@tailwindcss/cli": "^4.3.3"
   }
 }

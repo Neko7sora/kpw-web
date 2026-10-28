@@ -1,16 +1,37 @@
-{{ $baseURL := "/" | absURL -}} {{ $dot := . -}} {{ $dot.Scratch.Set "path" ""
--}} {{ $dot.Scratch.Set "breadcrumb" slice -}} {{ $url := replace .Permalink (
-printf "%s" .Site.BaseURL) "" -}} {{ $.Scratch.Add "path" .Site.BaseURL -}} {{
-$.Scratch.Add "breadcrumb" (slice (dict "url" .Site.BaseURL "name" "home"
-"position" 1 )) -}} {{ range $index, $element := split $url "/" -}} {{
-$dot.Scratch.Add "path" $element -}} {{ $.Scratch.Add "path" "/" -}} {{ if ne
-$element "" -}} {{ $.Scratch.Add "breadcrumb" (slice (dict "url" ($.Scratch.Get
-"path") "name" . "position" (add $index 2))) -}} {{ end -}} {{ end -}} {{
-$schemaLogo := resources.GetRemote (printf "%s" site.Params.schemaLogo) }} {{
-$schemaLogo := $schemaLogo.Resize (printf "%s" site.Params.schemaLogoResize) }}
-{{ $schemaImage := resources.GetRemote (printf "%s" site.Params.schemaImage) }}
-{{ $schemaImage := $schemaImage.Resize (printf "%s"
-site.Params.schemaImageResize) }}
+{{ $baseURL := "/" | absURL -}}
+{{ $dot := . -}}
+{{ $dot.Scratch.Set "path" "" -}}
+{{ $dot.Scratch.Set "breadcrumb" slice -}}
+{{ $url := replace .Permalink (
+  printf "%s" .Site.BaseURL) ""
+-}}
+{{ $.Scratch.Add "path" .Site.BaseURL -}}
+{{ $.Scratch.Add "breadcrumb" (slice (dict "url" .Site.BaseURL "name" "home"
+  "position" 1 ))
+-}}
+{{ range $index, $element := split $url "/" -}}
+  {{ $dot.Scratch.Add "path" $element -}}
+  {{ $.Scratch.Add "path" "/" -}}
+  {{ if ne
+    $element ""
+  -}}
+    {{ $.Scratch.Add "breadcrumb" (slice (dict "url" ($.Scratch.Get
+      "path") "name" . "position" (add $index 2)))
+    -}}
+  {{ end -}}
+{{ end -}}
+{{ $schemaLogo := dict "RelPermalink" "/512.png" "Width" 512 "Height" 512 }}
+{{ with resources.GetRemote (printf "%s" site.Params.schemaLogo) }}
+  {{ $schemaLogo = .Resize (printf "%s" site.Params.schemaLogoResize) }}
+{{ else }}
+  {{ warnf "Schema logo is unavailable; using the bundled icon" }}
+{{ end }}
+{{ $schemaImage := dict "RelPermalink" "/512.png" "Width" 512 "Height" 512 }}
+{{ with resources.GetRemote (printf "%s" site.Params.schemaImage) }}
+  {{ $schemaImage = .Resize (printf "%s" site.Params.schemaImageResize) }}
+{{ else }}
+  {{ warnf "Schema image is unavailable; using the bundled icon" }}
+{{ end }}
 
 <script type="application/ld+json">
   {

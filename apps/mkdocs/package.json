@@ -4,8 +4,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "mkdocs serve",
-    "build": "mkdocs build --site-dir ./../../public/docs",
+    "dev": "node ../../scripts/python.mjs -m mkdocs serve",
+    "build": "node ../../scripts/python.mjs -m mkdocs build --site-dir ./../../public/docs",
     "clean": "run-s clean:*",
     "clean:build": "shx rm -rf .cache",
     "clean:install": "shx rm -rf node_modules",

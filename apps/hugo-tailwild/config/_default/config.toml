@@ -3,22 +3,28 @@ canonifyURLs = false
 defaultContentLanguage = "ja"
 disableAliases = true
 disableHugoGeneratorInject = true
-disableKinds = ["taxonomy", "taxonomyTerm"]
+disableKinds = ["taxonomy", "term"]
 enableEmoji = true
 enableGitInfo = true
 enableRobotsTXT = true
-languageCode = "ja-JP"
-paginate = 7
+locale = "ja-JP"
 rssLimit = 10
 hasCJKLanguage = true
 publishDir = "./../../public"
+
+[pagination]
+  pagerSize = 7
+
+# npm workspaces hoists browser dependencies to the repository root.
+[security.node.permissions]
+  allowRead = [".", "../../node_modules"]
 
 # add redirects/headers
 [outputs]
   home = ["HTML", "RSS"]
 
 [caches]
-  [caches.getjson]
+  [caches.getresource]
     dir = ":cacheDir/:project"
     maxAge = "10s"
 

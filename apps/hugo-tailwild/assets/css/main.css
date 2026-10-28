@@ -1,6 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss" source("../../");
+@config "../../tailwind.config.js";
 
 @media (prefers-color-scheme: light) {
   .bg-liner {
@@ -27,27 +26,35 @@
 @font-face {
   font-style: normal;
   font-weight: 200;
-  src: local("※"), url(/fonts/LINESeedJP_OTF_Th.woff2) format("woff2");
+  src:
+    local("※"),
+    url(/fonts/LINESeedJP_OTF_Th.woff2) format("woff2");
   font-family: LINESeedJPStd;
 }
 
 @font-face {
   font-style: normal;
   font-weight: 400;
-  src: local("※"), url(/fonts/LINESeedJP_OTF_Rg.woff2) format("woff2");
+  src:
+    local("※"),
+    url(/fonts/LINESeedJP_OTF_Rg.woff2) format("woff2");
   font-family: LINESeedJPStd;
 }
 
 @font-face {
   font-style: normal;
   font-weight: 700;
-  src: local("※"), url(/fonts/LINESeedJP_OTF_Bd.woff2) format("woff2");
+  src:
+    local("※"),
+    url(/fonts/LINESeedJP_OTF_Bd.woff2) format("woff2");
   font-family: LINESeedJPStd;
 }
 
 @font-face {
   font-style: normal;
   font-weight: 900;
-  src: local("※"), url(/fonts/LINESeedJP_OTF_Eb.woff2) format("woff2");
+  src:
+    local("※"),
+    url(/fonts/LINESeedJP_OTF_Eb.woff2) format("woff2");
   font-family: LINESeedJPStd;
 }

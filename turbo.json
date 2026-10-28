@@ -1,38 +1,46 @@
 {
   "$schema": "https://turbo.build/schema.json",
-  "pipeline": {
+  "tasks": {
     "build": {
-      "dependsOn": ["^build"],
-      "outputs": ["public/**"],
-      "inputs": [
-        "apps/hugo/**",
-        "apps/hugo-tailwild/**",
-        "apps/mkdocs/**",
-        "packages/app-hugo/**",
-        "packages/app-mkdocs*/**"
-      ]
+      "dependsOn": ["^build"]
     },
     "build:minify": {
-      "dependsOn": ["^build:minify"],
-      "outputs": ["public/**"],
-      "inputs": ["packages/html-minifier/**", "public/**"]
+      "cache": false
     },
     "check": {},
     "clean:build": {
-      "inputs": ["packages/**", "apps/**"]
+      "cache": false
     },
     "clean:install": {
-      "inputs": ["packages/**", "apps/**"]
+      "cache": false
     },
     "clean:turbo": {
-      "inputs": ["packages/**", "apps/**"]
+      "cache": false
     },
     "dev": {
-      "inputs": ["packages/**", "apps/**"]
+      "cache": false,
+      "persistent": true
     },
     "fix": {},
     "install:next": {
-      "cache": true
+      "cache": false
+    },
+    "website-root-tailwild#build": {
+      "outputs": [
+        "$TURBO_ROOT$/public/**",
+        "!$TURBO_ROOT$/public/docs/**",
+        "resources/**",
+        "assets/css/style.css"
+      ]
+    },
+    "website-docs#build": {
+      "outputs": ["$TURBO_ROOT$/public/docs/**"]
     }
-  }
+  },
+  "globalDependencies": [
+    "scripts/**",
+    "packages/install-hugo/package.json",
+    "packages/install-mkdocs/requirements.txt",
+    "packages/app-mkdocs-extra/**"
+  ]
 }

@@ -30,6 +30,8 @@ customRules:
   - "@github/markdownlint-github"
 
 ignores:
+  - ".venv/**"
+  - ".cache/**"
   - node_modules
   - "**/node_modules"
   - dist
